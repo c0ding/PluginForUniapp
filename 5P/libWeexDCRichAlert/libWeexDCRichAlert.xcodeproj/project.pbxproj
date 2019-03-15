@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54E6DC0B223931DA00AE31EF /* DCRichAlertModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DBF5223931DA00AE31EF /* DCRichAlertModule.m */; };
+		54E6DC0C223931DA00AE31EF /* BEMAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DBFB223931DA00AE31EF /* BEMAnimationManager.m */; };
+		54E6DC0D223931DA00AE31EF /* BEMPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DBFC223931DA00AE31EF /* BEMPathManager.m */; };
+		54E6DC0E223931DA00AE31EF /* BEMCheckBoxGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DBFD223931DA00AE31EF /* BEMCheckBoxGroup.m */; };
+		54E6DC0F223931DA00AE31EF /* BEMCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DBFF223931DA00AE31EF /* BEMCheckBox.m */; };
+		54E6DC10223931DA00AE31EF /* DCRichAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DC02223931DA00AE31EF /* DCRichAlertView.m */; };
+		54E6DC11223931DA00AE31EF /* DC_TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DC07223931DA00AE31EF /* DC_TTTAttributedLabel.m */; };
+		54E6DC12223931DA00AE31EF /* DCXMLRichTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DC09223931DA00AE31EF /* DCXMLRichTextLabel.m */; };
+		54E6DC13223931DA00AE31EF /* DCRichAlertProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DC0A223931DA00AE31EF /* DCRichAlertProxy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54E6DBAF2239227A00AE31EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		54E6DBB12239227A00AE31EF /* liblibWeexDCRichAlert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibWeexDCRichAlert.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E6DBF5223931DA00AE31EF /* DCRichAlertModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRichAlertModule.m; sourceTree = "<group>"; };
+		54E6DBF6223931DA00AE31EF /* DCRichAlertProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCRichAlertProxy.h; sourceTree = "<group>"; };
+		54E6DBF8223931DA00AE31EF /* DCRichAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCRichAlertView.h; sourceTree = "<group>"; };
+		54E6DBFA223931DA00AE31EF /* BEMCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBox.h; sourceTree = "<group>"; };
+		54E6DBFB223931DA00AE31EF /* BEMAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnimationManager.m; sourceTree = "<group>"; };
+		54E6DBFC223931DA00AE31EF /* BEMPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPathManager.m; sourceTree = "<group>"; };
+		54E6DBFD223931DA00AE31EF /* BEMCheckBoxGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBoxGroup.m; sourceTree = "<group>"; };
+		54E6DBFE223931DA00AE31EF /* BEMAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimationManager.h; sourceTree = "<group>"; };
+		54E6DBFF223931DA00AE31EF /* BEMCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCheckBox.m; sourceTree = "<group>"; };
+		54E6DC00223931DA00AE31EF /* BEMPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPathManager.h; sourceTree = "<group>"; };
+		54E6DC01223931DA00AE31EF /* BEMCheckBoxGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCheckBoxGroup.h; sourceTree = "<group>"; };
+		54E6DC02223931DA00AE31EF /* DCRichAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRichAlertView.m; sourceTree = "<group>"; };
+		54E6DC03223931DA00AE31EF /* DCRichAlertModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCRichAlertModule.h; sourceTree = "<group>"; };
+		54E6DC05223931DA00AE31EF /* DCXMLRichTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCXMLRichTextLabel.h; sourceTree = "<group>"; };
+		54E6DC07223931DA00AE31EF /* DC_TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DC_TTTAttributedLabel.m; sourceTree = "<group>"; };
+		54E6DC08223931DA00AE31EF /* DC_TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DC_TTTAttributedLabel.h; sourceTree = "<group>"; };
+		54E6DC09223931DA00AE31EF /* DCXMLRichTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCXMLRichTextLabel.m; sourceTree = "<group>"; };
+		54E6DC0A223931DA00AE31EF /* DCRichAlertProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCRichAlertProxy.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54E6DBAE2239227A00AE31EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54E6DBA82239227A00AE31EF = {
+			isa = PBXGroup;
+			children = (
+				54E6DBB32239227A00AE31EF /* libWeexDCRichAlert */,
+				54E6DBB22239227A00AE31EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54E6DBB22239227A00AE31EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54E6DBB12239227A00AE31EF /* liblibWeexDCRichAlert.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54E6DBB32239227A00AE31EF /* libWeexDCRichAlert */ = {
+			isa = PBXGroup;
+			children = (
+				54E6DBF4223931DA00AE31EF /* DCRichAlert */,
+			);
+			path = libWeexDCRichAlert;
+			sourceTree = "<group>";
+		};
+		54E6DBF4223931DA00AE31EF /* DCRichAlert */ = {
+			isa = PBXGroup;
+			children = (
+				54E6DC03223931DA00AE31EF /* DCRichAlertModule.h */,
+				54E6DBF5223931DA00AE31EF /* DCRichAlertModule.m */,
+				54E6DBF6223931DA00AE31EF /* DCRichAlertProxy.h */,
+				54E6DC0A223931DA00AE31EF /* DCRichAlertProxy.m */,
+				54E6DBF7223931DA00AE31EF /* DCRichAlertView */,
+				54E6DC04223931DA00AE31EF /* DCXMLRichTextLabel */,
+			);
+			path = DCRichAlert;
+			sourceTree = "<group>";
+		};
+		54E6DBF7223931DA00AE31EF /* DCRichAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				54E6DBF8223931DA00AE31EF /* DCRichAlertView.h */,
+				54E6DC02223931DA00AE31EF /* DCRichAlertView.m */,
+				54E6DBF9223931DA00AE31EF /* DCCheckBox */,
+			);
+			path = DCRichAlertView;
+			sourceTree = "<group>";
+		};
+		54E6DBF9223931DA00AE31EF /* DCCheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				54E6DBFA223931DA00AE31EF /* BEMCheckBox.h */,
+				54E6DBFB223931DA00AE31EF /* BEMAnimationManager.m */,
+				54E6DBFC223931DA00AE31EF /* BEMPathManager.m */,
+				54E6DBFD223931DA00AE31EF /* BEMCheckBoxGroup.m */,
+				54E6DBFE223931DA00AE31EF /* BEMAnimationManager.h */,
+				54E6DBFF223931DA00AE31EF /* BEMCheckBox.m */,
+				54E6DC00223931DA00AE31EF /* BEMPathManager.h */,
+				54E6DC01223931DA00AE31EF /* BEMCheckBoxGroup.h */,
+			);
+			path = DCCheckBox;
+			sourceTree = "<group>";
+		};
+		54E6DC04223931DA00AE31EF /* DCXMLRichTextLabel */ = {
+			isa = PBXGroup;
+			children = (
+				54E6DC05223931DA00AE31EF /* DCXMLRichTextLabel.h */,
+				54E6DC06223931DA00AE31EF /* DC_TTTAttributedLabel */,
+				54E6DC09223931DA00AE31EF /* DCXMLRichTextLabel.m */,
+			);
+			path = DCXMLRichTextLabel;
+			sourceTree = "<group>";
+		};
+		54E6DC06223931DA00AE31EF /* DC_TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				54E6DC07223931DA00AE31EF /* DC_TTTAttributedLabel.m */,
+				54E6DC08223931DA00AE31EF /* DC_TTTAttributedLabel.h */,
+			);
+			path = DC_TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54E6DBB02239227A00AE31EF /* libWeexDCRichAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54E6DBBA2239227A00AE31EF /* Build configuration list for PBXNativeTarget "libWeexDCRichAlert" */;
+			buildPhases = (
+				54E6DBAD2239227A00AE31EF /* Sources */,
+				54E6DBAE2239227A00AE31EF /* Frameworks */,
+				54E6DBAF2239227A00AE31EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libWeexDCRichAlert;
+			productName = libWeexDCRichAlert;
+			productReference = 54E6DBB12239227A00AE31EF /* liblibWeexDCRichAlert.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54E6DBA92239227A00AE31EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "毕方";
+				TargetAttributes = {
+					54E6DBB02239227A00AE31EF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 54E6DBAC2239227A00AE31EF /* Build configuration list for PBXProject "libWeexDCRichAlert" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54E6DBA82239227A00AE31EF;
+			productRefGroup = 54E6DBB22239227A00AE31EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54E6DBB02239227A00AE31EF /* libWeexDCRichAlert */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54E6DBAD2239227A00AE31EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E6DC0B223931DA00AE31EF /* DCRichAlertModule.m in Sources */,
+				54E6DC0E223931DA00AE31EF /* BEMCheckBoxGroup.m in Sources */,
+				54E6DC12223931DA00AE31EF /* DCXMLRichTextLabel.m in Sources */,
+				54E6DC11223931DA00AE31EF /* DC_TTTAttributedLabel.m in Sources */,
+				54E6DC10223931DA00AE31EF /* DCRichAlertView.m in Sources */,
+				54E6DC13223931DA00AE31EF /* DCRichAlertProxy.m in Sources */,
+				54E6DC0D223931DA00AE31EF /* BEMPathManager.m in Sources */,
+				54E6DC0C223931DA00AE31EF /* BEMAnimationManager.m in Sources */,
+				54E6DC0F223931DA00AE31EF /* BEMCheckBox.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		54E6DBB82239227A00AE31EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		54E6DBB92239227A00AE31EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54E6DBBB2239227A00AE31EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LK2KT7Q34K;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../SDK/inc\"",
+					"\"$(SRCROOT)/../../SDK/inc/weexHeader\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54E6DBBC2239227A00AE31EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LK2KT7Q34K;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../SDK/inc\"",
+					"\"$(SRCROOT)/../../SDK/inc/weexHeader\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54E6DBAC2239227A00AE31EF /* Build configuration list for PBXProject "libWeexDCRichAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E6DBB82239227A00AE31EF /* Debug */,
+				54E6DBB92239227A00AE31EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54E6DBBA2239227A00AE31EF /* Build configuration list for PBXNativeTarget "libWeexDCRichAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E6DBBB2239227A00AE31EF /* Debug */,
+				54E6DBBC2239227A00AE31EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54E6DBA92239227A00AE31EF /* Project object */;
+}

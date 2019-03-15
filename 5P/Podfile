@@ -1,0 +1,9 @@
+platform:ios,'8.0'
+
+def pods
+
+end
+
+target '5P' do
+    pods
+end

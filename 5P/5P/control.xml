@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HBuilder debug="true" version="1.9.9.59000">
+
+	
+	<!--应用节点-->
+	
+	<apps>
+
+		<app appid="HelloH5" appver="1.0.1"/>
+		<app appid="__UNI__54FA04A" appver="1.0.1"/>
+		<app appid="__UNI__FE911E9" appver="1.0.1"/>
+        <app appid="__UNI__3C18621" appver="1.0.1"/>
+        
+	</apps>
+	
+	
+
+</HBuilder>
