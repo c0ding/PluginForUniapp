@@ -40,7 +40,6 @@
 		54E6DBEE22392B3200AE31EF /* control.xml in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DBED22392B3100AE31EF /* control.xml */; };
 		54E6DDD0223A274F00AE31EF /* liblibWeexBFLoginView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6DDCD223A26E000AE31EF /* liblibWeexBFLoginView.a */; };
 		54E6DDFB223B3CC900AE31EF /* liblibXHR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6DDFA223B3CC900AE31EF /* liblibXHR.a */; };
-		54E6DDFD223B3CE200AE31EF /* libcoreSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6DDFC223B3CE200AE31EF /* libcoreSupport.a */; };
 		54E6DDFF223B3CF600AE31EF /* liblibIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6DDFE223B3CF600AE31EF /* liblibIO.a */; };
 		54E6DE01223B3D0300AE31EF /* liblibNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6DE00223B3D0300AE31EF /* liblibNavigator.a */; };
 		54E6DE03223B3D1300AE31EF /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6DE02223B3D1300AE31EF /* liblibPDRCore.a */; };
@@ -155,7 +154,6 @@
 		54E6DBED22392B3100AE31EF /* control.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = control.xml; sourceTree = "<group>"; };
 		54E6DDC8223A26E000AE31EF /* libWeexBFLoginView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libWeexBFLoginView.xcodeproj; path = libWeexBFLoginView/libWeexBFLoginView.xcodeproj; sourceTree = "<group>"; };
 		54E6DDFA223B3CC900AE31EF /* liblibXHR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibXHR.a; path = ../../../SDK/Libs/liblibXHR.a; sourceTree = "<group>"; };
-		54E6DDFC223B3CE200AE31EF /* libcoreSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcoreSupport.a; path = ../../../SDK/Libs/libcoreSupport.a; sourceTree = "<group>"; };
 		54E6DDFE223B3CF600AE31EF /* liblibIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibIO.a; path = ../../../SDK/Libs/liblibIO.a; sourceTree = "<group>"; };
 		54E6DE00223B3D0300AE31EF /* liblibNavigator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibNavigator.a; path = ../../../SDK/Libs/liblibNavigator.a; sourceTree = "<group>"; };
 		54E6DE02223B3D1300AE31EF /* liblibPDRCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibPDRCore.a; path = ../../../SDK/Libs/liblibPDRCore.a; sourceTree = "<group>"; };
@@ -248,7 +246,6 @@
 				54E6DE0F223B3D5E00AE31EF /* AdSupport.framework in Frameworks */,
 				54E6DE0D223B3D5900AE31EF /* MessageUI.framework in Frameworks */,
 				54E6DE55223B443D00AE31EF /* liblibNativeObj.a in Frameworks */,
-				54E6DDFD223B3CE200AE31EF /* libcoreSupport.a in Frameworks */,
 				54E6DE05223B3D2000AE31EF /* liblibStorage.a in Frameworks */,
 				54E6DDFF223B3CF600AE31EF /* liblibIO.a in Frameworks */,
 				54E6DE03223B3D1300AE31EF /* liblibPDRCore.a in Frameworks */,
@@ -407,7 +404,6 @@
 				54E6DE4C223B420E00AE31EF /* liblibPush.a */,
 				54E6DE4A223B41F300AE31EF /* liblibWeex.a */,
 				54E6DDFA223B3CC900AE31EF /* liblibXHR.a */,
-				54E6DDFC223B3CE200AE31EF /* libcoreSupport.a */,
 				54E6DDFE223B3CF600AE31EF /* liblibIO.a */,
 				54E6DE00223B3D0300AE31EF /* liblibNavigator.a */,
 				54E6DE02223B3D1300AE31EF /* liblibPDRCore.a */,
