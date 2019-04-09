@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54E6DA802239169C00AE31EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DA7F2239169C00AE31EF /* AppDelegate.m */; };
+		545EE9A22254CC2F005E5BE1 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545EE9A12254CC2F005E5BE1 /* ExternalAccessory.framework */; };
+		545EE9A42254CD53005E5BE1 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545EE9A32254CD52005E5BE1 /* GLKit.framework */; };
+		545EE9DB2254CFD4005E5BE1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545EE9DA2254CFD4005E5BE1 /* OpenGLES.framework */; };
+		545EE9E32254D702005E5BE1 /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8922391EE200AE31EF /* AMap.bundle */; };
+		546430F3225336A600998F26 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 546430F2225336A600998F26 /* libz.1.2.5.tbd */; };
+		546430F5225336AE00998F26 /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 546430F4225336AE00998F26 /* libbz2.1.0.tbd */; };
+		546430F7225336B400998F26 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546430F6225336B400998F26 /* Accelerate.framework */; };
+		546430F9225336C200998F26 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546430F8225336C200998F26 /* VideoToolbox.framework */; };
+		5464311022533F3C00998F26 /* UPLiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5464310F22533F3C00998F26 /* UPLiveSDK.framework */; };
+		5464311622534A1000998F26 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5464311522534A1000998F26 /* Security.framework */; };
+		5464312022534AFD00998F26 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5464311F22534AFD00998F26 /* libsqlite3.tbd */; };
+		54BD82612254555E000A7E3B /* liblibWeexAppNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BD822B225452E2000A7E3B /* liblibWeexAppNative.a */; };
+		54E6DA802239169C00AE31EF /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DA7F2239169C00AE31EF /* AppDelegate.mm */; };
 		54E6DA832239169C00AE31EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DA822239169C00AE31EF /* ViewController.m */; };
 		54E6DA862239169C00AE31EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DA842239169C00AE31EF /* Main.storyboard */; };
 		54E6DA882239169D00AE31EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DA872239169D00AE31EF /* Assets.xcassets */; };
@@ -30,7 +42,6 @@
 		54E6DB9C22391EE200AE31EF /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8622391EE200AE31EF /* TZImagePickerController.bundle */; };
 		54E6DB9D22391EE200AE31EF /* PandoraApi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8722391EE200AE31EF /* PandoraApi.bundle */; };
 		54E6DB9E22391EE200AE31EF /* BaiduWalletSDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8822391EE200AE31EF /* BaiduWalletSDKBundle.bundle */; };
-		54E6DB9F22391EE200AE31EF /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8922391EE200AE31EF /* AMap.bundle */; };
 		54E6DBA022391EE200AE31EF /* qucsdkResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8A22391EE200AE31EF /* qucsdkResources.bundle */; };
 		54E6DBA122391EE200AE31EF /* DCMediaVideo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8B22391EE200AE31EF /* DCMediaVideo.bundle */; };
 		54E6DBA222391EE200AE31EF /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8C22391EE200AE31EF /* SVProgressHUD.bundle */; };
@@ -40,6 +51,7 @@
 		54E6DBEE22392B3200AE31EF /* control.xml in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DBED22392B3100AE31EF /* control.xml */; };
 		54E6DDD0223A274F00AE31EF /* liblibWeexBFLoginView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6DDCD223A26E000AE31EF /* liblibWeexBFLoginView.a */; };
 		54E6DDFB223B3CC900AE31EF /* liblibXHR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6DDFA223B3CC900AE31EF /* liblibXHR.a */; };
+		54E6DDFD223B3CE200AE31EF /* libcoreSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6DDFC223B3CE200AE31EF /* libcoreSupport.a */; };
 		54E6DDFF223B3CF600AE31EF /* liblibIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6DDFE223B3CF600AE31EF /* liblibIO.a */; };
 		54E6DE01223B3D0300AE31EF /* liblibNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6DE00223B3D0300AE31EF /* liblibNavigator.a */; };
 		54E6DE03223B3D1300AE31EF /* liblibPDRCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E6DE02223B3D1300AE31EF /* liblibPDRCore.a */; };
@@ -86,6 +98,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		54BD822A225452E2000A7E3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54BD8226225452E1000A7E3B /* libWeexAppNative.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 54BD821A225452CD000A7E3B;
+			remoteInfo = libWeexAppNative;
+		};
+		54BD825F22545557000A7E3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54BD8226225452E1000A7E3B /* libWeexAppNative.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 54BD8219225452CD000A7E3B;
+			remoteInfo = libWeexAppNative;
+		};
 		54E6DDCC223A26E000AE31EF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 54E6DDC8223A26E000AE31EF /* libWeexBFLoginView.xcodeproj */;
@@ -117,9 +143,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		545EE9A12254CC2F005E5BE1 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		545EE9A32254CD52005E5BE1 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		545EE9DA2254CFD4005E5BE1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		546430F2225336A600998F26 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		546430F4225336AE00998F26 /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		546430F6225336B400998F26 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		546430F8225336C200998F26 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		5464310F22533F3C00998F26 /* UPLiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UPLiveSDK.framework; path = ../SDK/Libs/UPLiveSDK.framework; sourceTree = "<group>"; };
+		5464311522534A1000998F26 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5464311F22534AFD00998F26 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		54BD8226225452E1000A7E3B /* libWeexAppNative.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libWeexAppNative.xcodeproj; path = libWeexAppNative/libWeexAppNative.xcodeproj; sourceTree = "<group>"; };
 		54E6DA7B2239169C00AE31EF /* 5P.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5P.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E6DA7E2239169C00AE31EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		54E6DA7F2239169C00AE31EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		54E6DA7F2239169C00AE31EF /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		54E6DA812239169C00AE31EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		54E6DA822239169C00AE31EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		54E6DA852239169C00AE31EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -154,6 +191,7 @@
 		54E6DBED22392B3100AE31EF /* control.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = control.xml; sourceTree = "<group>"; };
 		54E6DDC8223A26E000AE31EF /* libWeexBFLoginView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libWeexBFLoginView.xcodeproj; path = libWeexBFLoginView/libWeexBFLoginView.xcodeproj; sourceTree = "<group>"; };
 		54E6DDFA223B3CC900AE31EF /* liblibXHR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibXHR.a; path = ../../../SDK/Libs/liblibXHR.a; sourceTree = "<group>"; };
+		54E6DDFC223B3CE200AE31EF /* libcoreSupport.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcoreSupport.a; path = ../../../SDK/Libs/libcoreSupport.a; sourceTree = "<group>"; };
 		54E6DDFE223B3CF600AE31EF /* liblibIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibIO.a; path = ../../../SDK/Libs/liblibIO.a; sourceTree = "<group>"; };
 		54E6DE00223B3D0300AE31EF /* liblibNavigator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibNavigator.a; path = ../../../SDK/Libs/liblibNavigator.a; sourceTree = "<group>"; };
 		54E6DE02223B3D1300AE31EF /* liblibPDRCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibPDRCore.a; path = ../../../SDK/Libs/liblibPDRCore.a; sourceTree = "<group>"; };
@@ -208,44 +246,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545EE9DB2254CFD4005E5BE1 /* OpenGLES.framework in Frameworks */,
+				54E6DE47223B3F1400AE31EF /* CoreGraphics.framework in Frameworks */,
+				545EE9A42254CD53005E5BE1 /* GLKit.framework in Frameworks */,
+				5464311622534A1000998F26 /* Security.framework in Frameworks */,
+				54E6DE33223B3DD500AE31EF /* CoreTelephony.framework in Frameworks */,
+				54E6DE1F223B3D8E00AE31EF /* SystemConfiguration.framework in Frameworks */,
+				545EE9A22254CC2F005E5BE1 /* ExternalAccessory.framework in Frameworks */,
+				54E6DE41223B3E1400AE31EF /* libz.tbd in Frameworks */,
+				5464312022534AFD00998F26 /* libsqlite3.tbd in Frameworks */,
+				54E6DE3B223B3DFD00AE31EF /* libiconv.2.tbd in Frameworks */,
+				54BD82612254555E000A7E3B /* liblibWeexAppNative.a in Frameworks */,
+				54E6DE17223B3D7800AE31EF /* CoreLocation.framework in Frameworks */,
+				54E6DE3D223B3E0500AE31EF /* libsqlite3.0.tbd in Frameworks */,
+				54E6DE35223B3DDC00AE31EF /* libc++.tbd in Frameworks */,
+				546430F9225336C200998F26 /* VideoToolbox.framework in Frameworks */,
+				54E6DE1D223B3D8A00AE31EF /* AVFoundation.framework in Frameworks */,
+				546430F7225336B400998F26 /* Accelerate.framework in Frameworks */,
+				546430F5225336AE00998F26 /* libbz2.1.0.tbd in Frameworks */,
+				546430F3225336A600998F26 /* libz.1.2.5.tbd in Frameworks */,
 				54E6DED7223B509400AE31EF /* liblibWeexDCRichAlert.a in Frameworks */,
 				54E6DDD0223A274F00AE31EF /* liblibWeexBFLoginView.a in Frameworks */,
-				54E6DE35223B3DDC00AE31EF /* libc++.tbd in Frameworks */,
-				54E6DE47223B3F1400AE31EF /* CoreGraphics.framework in Frameworks */,
 				54E6DE2F223B3DCB00AE31EF /* CoreFoundation.framework in Frameworks */,
 				54E6DE4D223B420E00AE31EF /* liblibPush.a in Frameworks */,
 				54E6DE45223B3F0400AE31EF /* QuartzCore.framework in Frameworks */,
 				54E6DE31223B3DD000AE31EF /* AudioToolbox.framework in Frameworks */,
 				54E6DE2D223B3DC400AE31EF /* MediaPlayer.framework in Frameworks */,
-				54E6DE1F223B3D8E00AE31EF /* SystemConfiguration.framework in Frameworks */,
 				54E6DE0B223B3D4E00AE31EF /* MobileCoreServices.framework in Frameworks */,
-				54E6DE33223B3DD500AE31EF /* CoreTelephony.framework in Frameworks */,
 				54E6DE15223B3D7100AE31EF /* WebKit.framework in Frameworks */,
 				54E6DE09223B3D4700AE31EF /* JavaScriptCore.framework in Frameworks */,
 				54E6DE4F223B421300AE31EF /* liblibStorage.a in Frameworks */,
 				54E6DE43223B3EBA00AE31EF /* CoreText.framework in Frameworks */,
 				54E6DE54223B443D00AE31EF /* liblibNativeUI.a in Frameworks */,
-				54E6DE41223B3E1400AE31EF /* libz.tbd in Frameworks */,
 				54E6DE3F223B3E0D00AE31EF /* libxml2.tbd in Frameworks */,
 				54E6DE51223B422400AE31EF /* liblibNotification.a in Frameworks */,
-				54E6DE3D223B3E0500AE31EF /* libsqlite3.0.tbd in Frameworks */,
 				54E6DE4B223B41F400AE31EF /* liblibWeex.a in Frameworks */,
-				54E6DE3B223B3DFD00AE31EF /* libiconv.2.tbd in Frameworks */,
 				54E6DE2B223B3DBF00AE31EF /* CoreMedia.framework in Frameworks */,
 				54E6DE29223B3DB900AE31EF /* CoreAudio.framework in Frameworks */,
 				54E6DE27223B3DAA00AE31EF /* CoreAudioKit.framework in Frameworks */,
 				54E6DE25223B3DA500AE31EF /* CFNetwork.framework in Frameworks */,
 				54E6DE23223B3D9C00AE31EF /* Foundation.framework in Frameworks */,
 				54E6DE21223B3D9300AE31EF /* UIKit.framework in Frameworks */,
-				54E6DE1D223B3D8A00AE31EF /* AVFoundation.framework in Frameworks */,
 				54E6DE1B223B3D8500AE31EF /* AssetsLibrary.framework in Frameworks */,
 				54E6DE19223B3D7D00AE31EF /* AddressBook.framework in Frameworks */,
-				54E6DE17223B3D7800AE31EF /* CoreLocation.framework in Frameworks */,
 				54E6DE13223B3D6800AE31EF /* QuickLook.framework in Frameworks */,
 				54E6DE11223B3D6300AE31EF /* StoreKit.framework in Frameworks */,
 				54E6DE0F223B3D5E00AE31EF /* AdSupport.framework in Frameworks */,
 				54E6DE0D223B3D5900AE31EF /* MessageUI.framework in Frameworks */,
 				54E6DE55223B443D00AE31EF /* liblibNativeObj.a in Frameworks */,
+				54E6DDFD223B3CE200AE31EF /* libcoreSupport.a in Frameworks */,
 				54E6DE05223B3D2000AE31EF /* liblibStorage.a in Frameworks */,
 				54E6DDFF223B3CF600AE31EF /* liblibIO.a in Frameworks */,
 				54E6DE03223B3D1300AE31EF /* liblibPDRCore.a in Frameworks */,
@@ -253,12 +302,21 @@
 				54E6DE01223B3D0300AE31EF /* liblibNavigator.a in Frameworks */,
 				AA4957A8E73A1FFC3C2F041B /* libPods-5P.a in Frameworks */,
 				54E6DDFB223B3CC900AE31EF /* liblibXHR.a in Frameworks */,
+				5464311022533F3C00998F26 /* UPLiveSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54BD8227225452E1000A7E3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54BD822B225452E2000A7E3B /* liblibWeexAppNative.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		54C19633E32729D42067040D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +329,7 @@
 		54E6DA722239169C00AE31EF = {
 			isa = PBXGroup;
 			children = (
+				54BD8226225452E1000A7E3B /* libWeexAppNative.xcodeproj */,
 				54E6DECF223B507600AE31EF /* libWeexDCRichAlert.xcodeproj */,
 				54E6DDC8223A26E000AE31EF /* libWeexBFLoginView.xcodeproj */,
 				54E6DBA422391EEA00AE31EF /* inc */,
@@ -297,7 +356,7 @@
 				54E6DBED22392B3100AE31EF /* control.xml */,
 				54E6DBA622391F1300AE31EF /* Pandora */,
 				54E6DA7E2239169C00AE31EF /* AppDelegate.h */,
-				54E6DA7F2239169C00AE31EF /* AppDelegate.m */,
+				54E6DA7F2239169C00AE31EF /* AppDelegate.mm */,
 				54E6DA812239169C00AE31EF /* ViewController.h */,
 				54E6DA822239169C00AE31EF /* ViewController.m */,
 				54E6DA842239169C00AE31EF /* Main.storyboard */,
@@ -312,6 +371,16 @@
 		54E6DA942239173100AE31EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				545EE9DA2254CFD4005E5BE1 /* OpenGLES.framework */,
+				545EE9A32254CD52005E5BE1 /* GLKit.framework */,
+				545EE9A12254CC2F005E5BE1 /* ExternalAccessory.framework */,
+				5464311F22534AFD00998F26 /* libsqlite3.tbd */,
+				5464311522534A1000998F26 /* Security.framework */,
+				5464310F22533F3C00998F26 /* UPLiveSDK.framework */,
+				546430F8225336C200998F26 /* VideoToolbox.framework */,
+				546430F6225336B400998F26 /* Accelerate.framework */,
+				546430F4225336AE00998F26 /* libbz2.1.0.tbd */,
+				546430F2225336A600998F26 /* libz.1.2.5.tbd */,
 				54E6DE46223B3F1400AE31EF /* CoreGraphics.framework */,
 				54E6DE44223B3F0400AE31EF /* QuartzCore.framework */,
 				54E6DE42223B3EBA00AE31EF /* CoreText.framework */,
@@ -404,6 +473,7 @@
 				54E6DE4C223B420E00AE31EF /* liblibPush.a */,
 				54E6DE4A223B41F300AE31EF /* liblibWeex.a */,
 				54E6DDFA223B3CC900AE31EF /* liblibXHR.a */,
+				54E6DDFC223B3CE200AE31EF /* libcoreSupport.a */,
 				54E6DDFE223B3CF600AE31EF /* liblibIO.a */,
 				54E6DE00223B3D0300AE31EF /* liblibNavigator.a */,
 				54E6DE02223B3D1300AE31EF /* liblibPDRCore.a */,
@@ -436,6 +506,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				54BD826022545557000A7E3B /* PBXTargetDependency */,
 				54E6DED6223B507E00AE31EF /* PBXTargetDependency */,
 				54E6DDCF223A274C00AE31EF /* PBXTargetDependency */,
 			);
@@ -455,6 +526,11 @@
 				TargetAttributes = {
 					54E6DA7A2239169C00AE31EF = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -470,6 +546,10 @@
 			productRefGroup = 54E6DA7C2239169C00AE31EF /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 54BD8227225452E1000A7E3B /* Products */;
+					ProjectRef = 54BD8226225452E1000A7E3B /* libWeexAppNative.xcodeproj */;
+				},
 				{
 					ProductGroup = 54E6DDC9223A26E000AE31EF /* Products */;
 					ProjectRef = 54E6DDC8223A26E000AE31EF /* libWeexBFLoginView.xcodeproj */;
@@ -487,6 +567,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		54BD822B225452E2000A7E3B /* liblibWeexAppNative.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibWeexAppNative.a;
+			remoteRef = 54BD822A225452E2000A7E3B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		54E6DDCD223A26E000AE31EF /* liblibWeexBFLoginView.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -508,6 +595,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545EE9E32254D702005E5BE1 /* AMap.bundle in Resources */,
 				54E6DBA122391EE200AE31EF /* DCMediaVideo.bundle in Resources */,
 				54E6DB9B22391EE200AE31EF /* bds_easr_dnn_wakeup_model.dat in Resources */,
 				54E6DB9022391EE200AE31EF /* AlipaySDK.bundle in Resources */,
@@ -532,7 +620,6 @@
 				54E6DA862239169C00AE31EF /* Main.storyboard in Resources */,
 				54E6DBA222391EE200AE31EF /* SVProgressHUD.bundle in Resources */,
 				54E6DB9A22391EE200AE31EF /* bds_easr_wakeup_words.dat in Resources */,
-				54E6DB9F22391EE200AE31EF /* AMap.bundle in Resources */,
 				54E6DB9522391EE200AE31EF /* bds_easr_basic_model.dat in Resources */,
 				54E6DBA322391EE200AE31EF /* weex-main-jsfm.js in Resources */,
 				54E6DB9422391EE200AE31EF /* bds_license.dat in Resources */,
@@ -573,13 +660,18 @@
 			files = (
 				54E6DA832239169C00AE31EF /* ViewController.m in Sources */,
 				54E6DA8E2239169D00AE31EF /* main.m in Sources */,
-				54E6DA802239169C00AE31EF /* AppDelegate.m in Sources */,
+				54E6DA802239169C00AE31EF /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		54BD826022545557000A7E3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libWeexAppNative;
+			targetProxy = 54BD825F22545557000A7E3B /* PBXContainerItemProxy */;
+		};
 		54E6DDCF223A274C00AE31EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = libWeexBFLoginView;
@@ -646,6 +738,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -664,6 +757,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_execute;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -705,6 +800,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -717,6 +813,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACH_O_TYPE = mh_execute;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -728,7 +826,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CD6415CD9A146C663809E147 /* Pods-5P.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LK2KT7Q34K;
 				ENABLE_BITCODE = NO;
@@ -754,10 +854,12 @@
 					"-lcoreSupport",
 					"-llibPDRCore",
 					"-llibUI",
+					"-llibVideo",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.befang.-P";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bifang.uni.t;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s zrm64e arm64";
 			};
 			name = Debug;
 		};
@@ -765,7 +867,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BFF15DB3DD653B543F74A20B /* Pods-5P.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LK2KT7Q34K;
 				ENABLE_BITCODE = NO;
@@ -791,10 +895,12 @@
 					"-lcoreSupport",
 					"-llibPDRCore",
 					"-llibUI",
+					"-llibVideo",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.befang.-P";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bifang.uni.t;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s zrm64e arm64";
 			};
 			name = Release;
 		};

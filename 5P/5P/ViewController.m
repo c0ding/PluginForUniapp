@@ -10,7 +10,10 @@
 #import "PDRToolSystem.h"
 #import "PDRToolSystemEx.h"
 #import "PDRCoreAppManager.h"
-#define kStatusBarHeight 20.f
+#define kStatusBarHeight 00.f
+
+
+
 @interface ViewController ()
 {
     PDRCoreApp* pAppHandle;
@@ -59,6 +62,14 @@ static UIView* pContentVIew = nil;
     NSString* pArgus = @"";
     // 启动该应用
     pAppHandle = [[[PDRCore Instance] appManager] openAppAtLocation:pWWWPath withIndexPath:@"index.html" withArgs:pArgus withDelegate:nil];
+
+
+
+    
+    
+    
+    
+    
 }
 
 - (void)test {
