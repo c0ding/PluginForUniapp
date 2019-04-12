@@ -15,6 +15,7 @@
 @interface BFLoginView()
 @property (nonatomic, assign) BOOL mIsShowing;
 @property (nonatomic, copy) BFLoginViewCallback callback;
+
 @property (nonatomic, strong) UITextField *nameText;
 @property (nonatomic, strong) UITextField *pwdText;
 @property (nonatomic, strong) UIButton *loginBtn;
@@ -68,6 +69,12 @@
                               };
         self.callback(res);
     }
+    
+    
+    if (self.btnBlock) {
+        self.btnBlock(@{@"s":@"1"});
+    }
+    
 }
 
 
@@ -101,14 +108,9 @@
     return loginView;
 }
 
-- (void)show
-{
-    [self showInView:nil];
-}
 
-- (void)showInView:(UIView *)view
+- (void)showWithView:(UIView *)view
 {
-    
     if (self.mIsShowing) {
         return;
     }
@@ -116,11 +118,10 @@
     if (!view) {
         view = [self findVisibleWindow];
     }
-    
     [view addSubview:self];
-    
     self.mIsShowing = YES;
 }
+
 - (void)dismiss
 {
     self.mIsShowing = NO;

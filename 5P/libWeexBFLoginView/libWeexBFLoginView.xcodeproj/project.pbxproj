@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54D90C49223B8E4300E20BA9 /* BFLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D90C48223B8E4300E20BA9 /* BFLoginVC.m */; };
 		54E6DDD3223A27DF00AE31EF /* BFLoginViewModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DDD2223A27DF00AE31EF /* BFLoginViewModule.m */; };
 		54E6DDD6223A27FB00AE31EF /* BFLoginViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DDD5223A27FB00AE31EF /* BFLoginViewProxy.m */; };
 		54E6DDDA223A32D600AE31EF /* BFLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DDD9223A32D600AE31EF /* BFLoginView.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		54D90C47223B8E4300E20BA9 /* BFLoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFLoginVC.h; sourceTree = "<group>"; };
+		54D90C48223B8E4300E20BA9 /* BFLoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFLoginVC.m; sourceTree = "<group>"; };
 		54E6DDBC223A26D300AE31EF /* liblibWeexBFLoginView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibWeexBFLoginView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E6DDD1223A27DF00AE31EF /* BFLoginViewModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFLoginViewModule.h; sourceTree = "<group>"; };
 		54E6DDD2223A27DF00AE31EF /* BFLoginViewModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFLoginViewModule.m; sourceTree = "<group>"; };
@@ -64,10 +67,12 @@
 		54E6DDBE223A26D300AE31EF /* libWeexBFLoginView */ = {
 			isa = PBXGroup;
 			children = (
-				54E6DDD1223A27DF00AE31EF /* BFLoginViewModule.h */,
-				54E6DDD2223A27DF00AE31EF /* BFLoginViewModule.m */,
 				54E6DDD4223A27FB00AE31EF /* BFLoginViewProxy.h */,
 				54E6DDD5223A27FB00AE31EF /* BFLoginViewProxy.m */,
+				54E6DDD1223A27DF00AE31EF /* BFLoginViewModule.h */,
+				54E6DDD2223A27DF00AE31EF /* BFLoginViewModule.m */,
+				54D90C47223B8E4300E20BA9 /* BFLoginVC.h */,
+				54D90C48223B8E4300E20BA9 /* BFLoginVC.m */,
 				54E6DDD8223A32D600AE31EF /* BFLoginView.h */,
 				54E6DDD9223A32D600AE31EF /* BFLoginView.m */,
 			);
@@ -131,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D90C49223B8E4300E20BA9 /* BFLoginVC.m in Sources */,
 				54E6DDDA223A32D600AE31EF /* BFLoginView.m in Sources */,
 				54E6DDD3223A27DF00AE31EF /* BFLoginViewModule.m in Sources */,
 				54E6DDD6223A27FB00AE31EF /* BFLoginViewProxy.m in Sources */,
@@ -262,6 +268,10 @@
 					"\"$(SRCROOT)/../../SDK/inc/weexHeader\"",
 					"\"$(SRCROOT)/../../SDK/inc\"",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libWeexBFLoginView/WeChatSDK184",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -279,6 +289,10 @@
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../SDK/inc/weexHeader\"",
 					"\"$(SRCROOT)/../../SDK/inc\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libWeexBFLoginView/WeChatSDK184",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";

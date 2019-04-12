@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		545EE9792254C113005E5BE1 /* BFLocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 545EE9782254C113005E5BE1 /* BFLocationVC.m */; };
+		545EE9812254C561005E5BE1 /* TencentOpenAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 545EE97C2254C472005E5BE1 /* TencentOpenAPI.a */; };
+		545EE9DD2254D3C5005E5BE1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545EE9DC2254D3C5005E5BE1 /* CoreGraphics.framework */; };
+		545EE9DF2254D3CB005E5BE1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545EE9DE2254D3CB005E5BE1 /* OpenGLES.framework */; };
+		545EEA972255A8F5005E5BE1 /* AMapFoundationKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 545EEA5F2255A8F5005E5BE1 /* AMapFoundationKit.a */; };
+		545EEA982255A8F5005E5BE1 /* AMapSearchKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 545EEA6D2255A8F5005E5BE1 /* AMapSearchKit.a */; };
+		545EEA992255A8F5005E5BE1 /* MAMapKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 545EEA702255A8F5005E5BE1 /* MAMapKit.a */; };
+		545EEAA82255AA87005E5BE1 /* AMapLocationKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 545EEAA72255AA87005E5BE1 /* AMapLocationKit.a */; };
+		54BD8246225453AC000A7E3B /* BFAppNativeProxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = 54BD8245225453AC000A7E3B /* BFAppNativeProxy.mm */; };
+		54BD8249225453C5000A7E3B /* BFAppNativeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD8248225453C5000A7E3B /* BFAppNativeModule.m */; };
+		54BD825A2254552F000A7E3B /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BD824F2254552F000A7E3B /* libWeChatSDK.a */; };
+		54BD825B2254552F000A7E3B /* UIAlertView+WX.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD82512254552F000A7E3B /* UIAlertView+WX.m */; };
+		54BD825C2254552F000A7E3B /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD82522254552F000A7E3B /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */; };
+		54BD825D2254552F000A7E3B /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD82552254552F000A7E3B /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */; };
+		54BD825E2254552F000A7E3B /* WXMediaMessage+messageConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD82562254552F000A7E3B /* WXMediaMessage+messageConstruct.m */; };
+		54BD826922545D31000A7E3B /* BFCacheHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD826822545D31000A7E3B /* BFCacheHandle.m */; };
+		54BD827022547C64000A7E3B /* BFQQShareHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD826F22547C64000A7E3B /* BFQQShareHandle.m */; };
+		54BD828B22548F38000A7E3B /* BFWeiXinShareHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BD828A22548F38000A7E3B /* BFWeiXinShareHandle.m */; };
+		54C53823225C47010038EABD /* BFNearbyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C53822225C47010038EABD /* BFNearbyVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54BD8218225452CD000A7E3B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		545EE9772254C113005E5BE1 /* BFLocationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFLocationVC.h; sourceTree = "<group>"; };
+		545EE9782254C113005E5BE1 /* BFLocationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFLocationVC.m; sourceTree = "<group>"; };
+		545EE97B2254C472005E5BE1 /* sdkdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdkdef.h; sourceTree = "<group>"; };
+		545EE97C2254C472005E5BE1 /* TencentOpenAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = TencentOpenAPI.a; sourceTree = "<group>"; };
+		545EE97D2254C472005E5BE1 /* TencentOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentOAuth.h; sourceTree = "<group>"; };
+		545EE97E2254C472005E5BE1 /* QQApiInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQApiInterface.h; sourceTree = "<group>"; };
+		545EE97F2254C472005E5BE1 /* QQApiInterfaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQApiInterfaceObject.h; sourceTree = "<group>"; };
+		545EE99F2254CC00005E5BE1 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		545EE9DC2254D3C5005E5BE1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		545EE9DE2254D3CB005E5BE1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		545EEA522255A8F5005E5BE1 /* AMapURLSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapURLSearch.h; sourceTree = "<group>"; };
+		545EEA532255A8F5005E5BE1 /* AMapURLSearchType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapURLSearchType.h; sourceTree = "<group>"; };
+		545EEA542255A8F5005E5BE1 /* NSMutableArray+AMapSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+AMapSafe.h"; sourceTree = "<group>"; };
+		545EEA552255A8F5005E5BE1 /* NSObject+AMapJsonSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AMapJsonSerialization.h"; sourceTree = "<group>"; };
+		545EEA562255A8F5005E5BE1 /* NSMutableDictionary+AMapSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+AMapSafe.h"; sourceTree = "<group>"; };
+		545EEA572255A8F5005E5BE1 /* AMapURLSearchConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapURLSearchConfig.h; sourceTree = "<group>"; };
+		545EEA582255A8F5005E5BE1 /* AMapFoundationVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapFoundationVersion.h; sourceTree = "<group>"; };
+		545EEA592255A8F5005E5BE1 /* AMapUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapUtility.h; sourceTree = "<group>"; };
+		545EEA5A2255A8F5005E5BE1 /* AMapFoundationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapFoundationKit.h; sourceTree = "<group>"; };
+		545EEA5B2255A8F5005E5BE1 /* AMapServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapServices.h; sourceTree = "<group>"; };
+		545EEA5C2255A8F5005E5BE1 /* version.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version.txt; sourceTree = "<group>"; };
+		545EEA5E2255A8F5005E5BE1 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		545EEA5F2255A8F5005E5BE1 /* AMapFoundationKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AMapFoundationKit.a; sourceTree = "<group>"; };
+		545EEA622255A8F5005E5BE1 /* AMapSearchObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapSearchObj.h; sourceTree = "<group>"; };
+		545EEA632255A8F5005E5BE1 /* AMapCommonObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapCommonObj.h; sourceTree = "<group>"; };
+		545EEA642255A8F5005E5BE1 /* AMapSearchVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapSearchVersion.h; sourceTree = "<group>"; };
+		545EEA652255A8F5005E5BE1 /* AMapSearchError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapSearchError.h; sourceTree = "<group>"; };
+		545EEA662255A8F5005E5BE1 /* AMapSearchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapSearchKit.h; sourceTree = "<group>"; };
+		545EEA672255A8F5005E5BE1 /* AMapNearbyUploadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapNearbyUploadInfo.h; sourceTree = "<group>"; };
+		545EEA682255A8F5005E5BE1 /* AMapNearbySearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapNearbySearchManager.h; sourceTree = "<group>"; };
+		545EEA692255A8F5005E5BE1 /* AMapSearchAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapSearchAPI.h; sourceTree = "<group>"; };
+		545EEA6A2255A8F5005E5BE1 /* version.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version.txt; sourceTree = "<group>"; };
+		545EEA6C2255A8F5005E5BE1 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		545EEA6D2255A8F5005E5BE1 /* AMapSearchKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AMapSearchKit.a; sourceTree = "<group>"; };
+		545EEA6F2255A8F5005E5BE1 /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
+		545EEA702255A8F5005E5BE1 /* MAMapKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = MAMapKit.a; sourceTree = "<group>"; };
+		545EEA722255A8F5005E5BE1 /* MAMultiPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMultiPoint.h; sourceTree = "<group>"; };
+		545EEA732255A8F5005E5BE1 /* MAGroundOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGroundOverlay.h; sourceTree = "<group>"; };
+		545EEA742255A8F5005E5BE1 /* MAPolygonRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPolygonRenderer.h; sourceTree = "<group>"; };
+		545EEA752255A8F5005E5BE1 /* MAPinAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPinAnnotationView.h; sourceTree = "<group>"; };
+		545EEA762255A8F5005E5BE1 /* MAOverlayPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAOverlayPathView.h; sourceTree = "<group>"; };
+		545EEA772255A8F5005E5BE1 /* MAHeatMapTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAHeatMapTileOverlay.h; sourceTree = "<group>"; };
+		545EEA782255A8F5005E5BE1 /* MACircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACircleView.h; sourceTree = "<group>"; };
+		545EEA792255A8F5005E5BE1 /* MAPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPointAnnotation.h; sourceTree = "<group>"; };
+		545EEA7A2255A8F5005E5BE1 /* MACircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACircle.h; sourceTree = "<group>"; };
+		545EEA7B2255A8F5005E5BE1 /* MAAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAnnotation.h; sourceTree = "<group>"; };
+		545EEA7C2255A8F5005E5BE1 /* MAPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPolygon.h; sourceTree = "<group>"; };
+		545EEA7D2255A8F5005E5BE1 /* MAPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPolyline.h; sourceTree = "<group>"; };
+		545EEA7E2255A8F5005E5BE1 /* MAMultiColoredPolylineRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMultiColoredPolylineRenderer.h; sourceTree = "<group>"; };
+		545EEA7F2255A8F5005E5BE1 /* MAOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAOverlay.h; sourceTree = "<group>"; };
+		545EEA802255A8F5005E5BE1 /* MATileOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATileOverlayView.h; sourceTree = "<group>"; };
+		545EEA812255A8F5005E5BE1 /* MATileOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATileOverlayRenderer.h; sourceTree = "<group>"; };
+		545EEA822255A8F5005E5BE1 /* MAMapVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMapVersion.h; sourceTree = "<group>"; };
+		545EEA832255A8F5005E5BE1 /* MAGeodesicPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGeodesicPolyline.h; sourceTree = "<group>"; };
+		545EEA842255A8F5005E5BE1 /* MAOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAOverlayView.h; sourceTree = "<group>"; };
+		545EEA852255A8F5005E5BE1 /* MAMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMapKit.h; sourceTree = "<group>"; };
+		545EEA862255A8F5005E5BE1 /* MAPolylineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPolylineView.h; sourceTree = "<group>"; };
+		545EEA872255A8F5005E5BE1 /* MAGroundOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGroundOverlayView.h; sourceTree = "<group>"; };
+		545EEA882255A8F5005E5BE1 /* MAMultiPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMultiPolyline.h; sourceTree = "<group>"; };
+		545EEA892255A8F5005E5BE1 /* MAPolylineRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPolylineRenderer.h; sourceTree = "<group>"; };
+		545EEA8A2255A8F5005E5BE1 /* MAShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAShape.h; sourceTree = "<group>"; };
+		545EEA8B2255A8F5005E5BE1 /* MAAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAnnotationView.h; sourceTree = "<group>"; };
+		545EEA8C2255A8F5005E5BE1 /* MATileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATileOverlay.h; sourceTree = "<group>"; };
+		545EEA8D2255A8F5005E5BE1 /* MACircleRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACircleRenderer.h; sourceTree = "<group>"; };
+		545EEA8E2255A8F5005E5BE1 /* MAGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGeometry.h; sourceTree = "<group>"; };
+		545EEA8F2255A8F5005E5BE1 /* MAOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAOverlayRenderer.h; sourceTree = "<group>"; };
+		545EEA902255A8F5005E5BE1 /* MAUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAUserLocation.h; sourceTree = "<group>"; };
+		545EEA912255A8F5005E5BE1 /* MAUserLocationRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAUserLocationRepresentation.h; sourceTree = "<group>"; };
+		545EEA922255A8F5005E5BE1 /* MAMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMapView.h; sourceTree = "<group>"; };
+		545EEA932255A8F5005E5BE1 /* MAOverlayPathRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAOverlayPathRenderer.h; sourceTree = "<group>"; };
+		545EEA942255A8F5005E5BE1 /* MAGroundOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAGroundOverlayRenderer.h; sourceTree = "<group>"; };
+		545EEA952255A8F5005E5BE1 /* MAPolygonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAPolygonView.h; sourceTree = "<group>"; };
+		545EEA962255A8F5005E5BE1 /* version.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version.txt; sourceTree = "<group>"; };
+		545EEA9B2255AA7A005E5BE1 /* version.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = version.txt; sourceTree = "<group>"; };
+		545EEA9D2255AA7F005E5BE1 /* AMapLocationKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapLocationKit.h; sourceTree = "<group>"; };
+		545EEA9E2255AA7F005E5BE1 /* AMapGeoFenceError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapGeoFenceError.h; sourceTree = "<group>"; };
+		545EEA9F2255AA7F005E5BE1 /* AMapGeoFenceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapGeoFenceManager.h; sourceTree = "<group>"; };
+		545EEAA02255AA7F005E5BE1 /* AMapLocationRegionObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapLocationRegionObj.h; sourceTree = "<group>"; };
+		545EEAA12255AA7F005E5BE1 /* AMapLocationVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapLocationVersion.h; sourceTree = "<group>"; };
+		545EEAA22255AA7F005E5BE1 /* AMapGeoFenceRegionObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapGeoFenceRegionObj.h; sourceTree = "<group>"; };
+		545EEAA32255AA7F005E5BE1 /* AMapLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapLocationManager.h; sourceTree = "<group>"; };
+		545EEAA42255AA7F005E5BE1 /* AMapLocationCommonObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMapLocationCommonObj.h; sourceTree = "<group>"; };
+		545EEAA62255AA83005E5BE1 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		545EEAA72255AA87005E5BE1 /* AMapLocationKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AMapLocationKit.a; sourceTree = "<group>"; };
+		54BD821A225452CD000A7E3B /* liblibWeexAppNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibWeexAppNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BD8244225453AC000A7E3B /* BFAppNativeProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFAppNativeProxy.h; sourceTree = "<group>"; };
+		54BD8245225453AC000A7E3B /* BFAppNativeProxy.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BFAppNativeProxy.mm; sourceTree = "<group>"; };
+		54BD8247225453C5000A7E3B /* BFAppNativeModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFAppNativeModule.h; sourceTree = "<group>"; };
+		54BD8248225453C5000A7E3B /* BFAppNativeModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFAppNativeModule.m; sourceTree = "<group>"; };
+		54BD824B2254552F000A7E3B /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		54BD824C2254552F000A7E3B /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		54BD824D2254552F000A7E3B /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		54BD824E2254552F000A7E3B /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		54BD824F2254552F000A7E3B /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		54BD82512254552F000A7E3B /* UIAlertView+WX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+WX.m"; sourceTree = "<group>"; };
+		54BD82522254552F000A7E3B /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		54BD82532254552F000A7E3B /* WXMediaMessage+messageConstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXMediaMessage+messageConstruct.h"; sourceTree = "<group>"; };
+		54BD82542254552F000A7E3B /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		54BD82552254552F000A7E3B /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		54BD82562254552F000A7E3B /* WXMediaMessage+messageConstruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXMediaMessage+messageConstruct.m"; sourceTree = "<group>"; };
+		54BD82572254552F000A7E3B /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		54BD82582254552F000A7E3B /* UIAlertView+WX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+WX.h"; sourceTree = "<group>"; };
+		54BD82592254552F000A7E3B /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		54BD826722545D31000A7E3B /* BFCacheHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFCacheHandle.h; sourceTree = "<group>"; };
+		54BD826822545D31000A7E3B /* BFCacheHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFCacheHandle.m; sourceTree = "<group>"; };
+		54BD826B2254605A000A7E3B /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		54BD826E22547C64000A7E3B /* BFQQShareHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFQQShareHandle.h; sourceTree = "<group>"; };
+		54BD826F22547C64000A7E3B /* BFQQShareHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFQQShareHandle.m; sourceTree = "<group>"; };
+		54BD828922548F38000A7E3B /* BFWeiXinShareHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFWeiXinShareHandle.h; sourceTree = "<group>"; };
+		54BD828A22548F38000A7E3B /* BFWeiXinShareHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFWeiXinShareHandle.m; sourceTree = "<group>"; };
+		54C53821225C47010038EABD /* BFNearbyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFNearbyVC.h; sourceTree = "<group>"; };
+		54C53822225C47010038EABD /* BFNearbyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFNearbyVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54BD8217225452CD000A7E3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545EEAA82255AA87005E5BE1 /* AMapLocationKit.a in Frameworks */,
+				545EE9DF2254D3CB005E5BE1 /* OpenGLES.framework in Frameworks */,
+				545EEA982255A8F5005E5BE1 /* AMapSearchKit.a in Frameworks */,
+				545EE9DD2254D3C5005E5BE1 /* CoreGraphics.framework in Frameworks */,
+				545EEA992255A8F5005E5BE1 /* MAMapKit.a in Frameworks */,
+				545EEA972255A8F5005E5BE1 /* AMapFoundationKit.a in Frameworks */,
+				545EE9812254C561005E5BE1 /* TencentOpenAPI.a in Frameworks */,
+				54BD825A2254552F000A7E3B /* libWeChatSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		545EE97A2254C472005E5BE1 /* qqShare */ = {
+			isa = PBXGroup;
+			children = (
+				545EE97B2254C472005E5BE1 /* sdkdef.h */,
+				545EE97C2254C472005E5BE1 /* TencentOpenAPI.a */,
+				545EE97D2254C472005E5BE1 /* TencentOAuth.h */,
+				545EE97E2254C472005E5BE1 /* QQApiInterface.h */,
+				545EE97F2254C472005E5BE1 /* QQApiInterfaceObject.h */,
+			);
+			path = qqShare;
+			sourceTree = "<group>";
+		};
+		545EEA4F2255A8F5005E5BE1 /* AMapSDK */ = {
+			isa = PBXGroup;
+			children = (
+				545EEA9A2255AA6E005E5BE1 /* loc */,
+				545EEA502255A8F5005E5BE1 /* foundation */,
+				545EEA602255A8F5005E5BE1 /* search */,
+				545EEA6E2255A8F5005E5BE1 /* 2d */,
+			);
+			path = AMapSDK;
+			sourceTree = "<group>";
+		};
+		545EEA502255A8F5005E5BE1 /* foundation */ = {
+			isa = PBXGroup;
+			children = (
+				545EEA512255A8F5005E5BE1 /* Headers */,
+				545EEA5C2255A8F5005E5BE1 /* version.txt */,
+				545EEA5D2255A8F5005E5BE1 /* Modules */,
+				545EEA5F2255A8F5005E5BE1 /* AMapFoundationKit.a */,
+			);
+			path = foundation;
+			sourceTree = "<group>";
+		};
+		545EEA512255A8F5005E5BE1 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				545EEA522255A8F5005E5BE1 /* AMapURLSearch.h */,
+				545EEA532255A8F5005E5BE1 /* AMapURLSearchType.h */,
+				545EEA542255A8F5005E5BE1 /* NSMutableArray+AMapSafe.h */,
+				545EEA552255A8F5005E5BE1 /* NSObject+AMapJsonSerialization.h */,
+				545EEA562255A8F5005E5BE1 /* NSMutableDictionary+AMapSafe.h */,
+				545EEA572255A8F5005E5BE1 /* AMapURLSearchConfig.h */,
+				545EEA582255A8F5005E5BE1 /* AMapFoundationVersion.h */,
+				545EEA592255A8F5005E5BE1 /* AMapUtility.h */,
+				545EEA5A2255A8F5005E5BE1 /* AMapFoundationKit.h */,
+				545EEA5B2255A8F5005E5BE1 /* AMapServices.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		545EEA5D2255A8F5005E5BE1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				545EEA5E2255A8F5005E5BE1 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		545EEA602255A8F5005E5BE1 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				545EEA612255A8F5005E5BE1 /* Headers */,
+				545EEA6A2255A8F5005E5BE1 /* version.txt */,
+				545EEA6B2255A8F5005E5BE1 /* Modules */,
+				545EEA6D2255A8F5005E5BE1 /* AMapSearchKit.a */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		545EEA612255A8F5005E5BE1 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				545EEA622255A8F5005E5BE1 /* AMapSearchObj.h */,
+				545EEA632255A8F5005E5BE1 /* AMapCommonObj.h */,
+				545EEA642255A8F5005E5BE1 /* AMapSearchVersion.h */,
+				545EEA652255A8F5005E5BE1 /* AMapSearchError.h */,
+				545EEA662255A8F5005E5BE1 /* AMapSearchKit.h */,
+				545EEA672255A8F5005E5BE1 /* AMapNearbyUploadInfo.h */,
+				545EEA682255A8F5005E5BE1 /* AMapNearbySearchManager.h */,
+				545EEA692255A8F5005E5BE1 /* AMapSearchAPI.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		545EEA6B2255A8F5005E5BE1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				545EEA6C2255A8F5005E5BE1 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		545EEA6E2255A8F5005E5BE1 /* 2d */ = {
+			isa = PBXGroup;
+			children = (
+				545EEA6F2255A8F5005E5BE1 /* AMap.bundle */,
+				545EEA702255A8F5005E5BE1 /* MAMapKit.a */,
+				545EEA712255A8F5005E5BE1 /* Headers */,
+				545EEA962255A8F5005E5BE1 /* version.txt */,
+			);
+			path = 2d;
+			sourceTree = "<group>";
+		};
+		545EEA712255A8F5005E5BE1 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				545EEA722255A8F5005E5BE1 /* MAMultiPoint.h */,
+				545EEA732255A8F5005E5BE1 /* MAGroundOverlay.h */,
+				545EEA742255A8F5005E5BE1 /* MAPolygonRenderer.h */,
+				545EEA752255A8F5005E5BE1 /* MAPinAnnotationView.h */,
+				545EEA762255A8F5005E5BE1 /* MAOverlayPathView.h */,
+				545EEA772255A8F5005E5BE1 /* MAHeatMapTileOverlay.h */,
+				545EEA782255A8F5005E5BE1 /* MACircleView.h */,
+				545EEA792255A8F5005E5BE1 /* MAPointAnnotation.h */,
+				545EEA7A2255A8F5005E5BE1 /* MACircle.h */,
+				545EEA7B2255A8F5005E5BE1 /* MAAnnotation.h */,
+				545EEA7C2255A8F5005E5BE1 /* MAPolygon.h */,
+				545EEA7D2255A8F5005E5BE1 /* MAPolyline.h */,
+				545EEA7E2255A8F5005E5BE1 /* MAMultiColoredPolylineRenderer.h */,
+				545EEA7F2255A8F5005E5BE1 /* MAOverlay.h */,
+				545EEA802255A8F5005E5BE1 /* MATileOverlayView.h */,
+				545EEA812255A8F5005E5BE1 /* MATileOverlayRenderer.h */,
+				545EEA822255A8F5005E5BE1 /* MAMapVersion.h */,
+				545EEA832255A8F5005E5BE1 /* MAGeodesicPolyline.h */,
+				545EEA842255A8F5005E5BE1 /* MAOverlayView.h */,
+				545EEA852255A8F5005E5BE1 /* MAMapKit.h */,
+				545EEA862255A8F5005E5BE1 /* MAPolylineView.h */,
+				545EEA872255A8F5005E5BE1 /* MAGroundOverlayView.h */,
+				545EEA882255A8F5005E5BE1 /* MAMultiPolyline.h */,
+				545EEA892255A8F5005E5BE1 /* MAPolylineRenderer.h */,
+				545EEA8A2255A8F5005E5BE1 /* MAShape.h */,
+				545EEA8B2255A8F5005E5BE1 /* MAAnnotationView.h */,
+				545EEA8C2255A8F5005E5BE1 /* MATileOverlay.h */,
+				545EEA8D2255A8F5005E5BE1 /* MACircleRenderer.h */,
+				545EEA8E2255A8F5005E5BE1 /* MAGeometry.h */,
+				545EEA8F2255A8F5005E5BE1 /* MAOverlayRenderer.h */,
+				545EEA902255A8F5005E5BE1 /* MAUserLocation.h */,
+				545EEA912255A8F5005E5BE1 /* MAUserLocationRepresentation.h */,
+				545EEA922255A8F5005E5BE1 /* MAMapView.h */,
+				545EEA932255A8F5005E5BE1 /* MAOverlayPathRenderer.h */,
+				545EEA942255A8F5005E5BE1 /* MAGroundOverlayRenderer.h */,
+				545EEA952255A8F5005E5BE1 /* MAPolygonView.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		545EEA9A2255AA6E005E5BE1 /* loc */ = {
+			isa = PBXGroup;
+			children = (
+				545EEAA72255AA87005E5BE1 /* AMapLocationKit.a */,
+				545EEA9C2255AA7F005E5BE1 /* Headers */,
+				545EEAA52255AA83005E5BE1 /* Modules */,
+				545EEA9B2255AA7A005E5BE1 /* version.txt */,
+			);
+			path = loc;
+			sourceTree = "<group>";
+		};
+		545EEA9C2255AA7F005E5BE1 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				545EEA9D2255AA7F005E5BE1 /* AMapLocationKit.h */,
+				545EEA9E2255AA7F005E5BE1 /* AMapGeoFenceError.h */,
+				545EEA9F2255AA7F005E5BE1 /* AMapGeoFenceManager.h */,
+				545EEAA02255AA7F005E5BE1 /* AMapLocationRegionObj.h */,
+				545EEAA12255AA7F005E5BE1 /* AMapLocationVersion.h */,
+				545EEAA22255AA7F005E5BE1 /* AMapGeoFenceRegionObj.h */,
+				545EEAA32255AA7F005E5BE1 /* AMapLocationManager.h */,
+				545EEAA42255AA7F005E5BE1 /* AMapLocationCommonObj.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		545EEAA52255AA83005E5BE1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				545EEAA62255AA83005E5BE1 /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		54BD8211225452CD000A7E3B = {
+			isa = PBXGroup;
+			children = (
+				54BD821C225452CD000A7E3B /* Class */,
+				545EEA4F2255A8F5005E5BE1 /* AMapSDK */,
+				54BD826A22545F43000A7E3B /* QQSDK */,
+				54BD824A2254552F000A7E3B /* WeChatSDK */,
+				54BD821B225452CD000A7E3B /* Products */,
+				54BD827122548071000A7E3B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		54BD821B225452CD000A7E3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54BD821A225452CD000A7E3B /* liblibWeexAppNative.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54BD821C225452CD000A7E3B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				54C5381C225B17190038EABD /* Cache */,
+				54C5381B225B17000038EABD /* Share */,
+				54C53819225B16BE0038EABD /* Location */,
+				54BD8244225453AC000A7E3B /* BFAppNativeProxy.h */,
+				54BD8245225453AC000A7E3B /* BFAppNativeProxy.mm */,
+				54BD8247225453C5000A7E3B /* BFAppNativeModule.h */,
+				54BD8248225453C5000A7E3B /* BFAppNativeModule.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		54BD824A2254552F000A7E3B /* WeChatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				54BD824B2254552F000A7E3B /* WXApi.h */,
+				54BD824C2254552F000A7E3B /* WXApiObject.h */,
+				54BD824D2254552F000A7E3B /* README.txt */,
+				54BD824E2254552F000A7E3B /* WechatAuthSDK.h */,
+				54BD824F2254552F000A7E3B /* libWeChatSDK.a */,
+				54BD82502254552F000A7E3B /* Helper */,
+			);
+			path = WeChatSDK;
+			sourceTree = "<group>";
+		};
+		54BD82502254552F000A7E3B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				54BD82512254552F000A7E3B /* UIAlertView+WX.m */,
+				54BD82522254552F000A7E3B /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */,
+				54BD82532254552F000A7E3B /* WXMediaMessage+messageConstruct.h */,
+				54BD82542254552F000A7E3B /* Constant.h */,
+				54BD82552254552F000A7E3B /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */,
+				54BD82562254552F000A7E3B /* WXMediaMessage+messageConstruct.m */,
+				54BD82572254552F000A7E3B /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */,
+				54BD82582254552F000A7E3B /* UIAlertView+WX.h */,
+				54BD82592254552F000A7E3B /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		54BD826A22545F43000A7E3B /* QQSDK */ = {
+			isa = PBXGroup;
+			children = (
+				545EE97A2254C472005E5BE1 /* qqShare */,
+				54BD826B2254605A000A7E3B /* TencentOpenApi_IOS_Bundle.bundle */,
+			);
+			path = QQSDK;
+			sourceTree = "<group>";
+		};
+		54BD827122548071000A7E3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				545EE9DE2254D3CB005E5BE1 /* OpenGLES.framework */,
+				545EE9DC2254D3C5005E5BE1 /* CoreGraphics.framework */,
+				545EE99F2254CC00005E5BE1 /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54C53819225B16BE0038EABD /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				54C5381A225B16E20038EABD /* Controller */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		54C5381A225B16E20038EABD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				545EE9772254C113005E5BE1 /* BFLocationVC.h */,
+				545EE9782254C113005E5BE1 /* BFLocationVC.m */,
+				54C53821225C47010038EABD /* BFNearbyVC.h */,
+				54C53822225C47010038EABD /* BFNearbyVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54C5381B225B17000038EABD /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				54BD826E22547C64000A7E3B /* BFQQShareHandle.h */,
+				54BD826F22547C64000A7E3B /* BFQQShareHandle.m */,
+				54BD828922548F38000A7E3B /* BFWeiXinShareHandle.h */,
+				54BD828A22548F38000A7E3B /* BFWeiXinShareHandle.m */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		54C5381C225B17190038EABD /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				54BD826722545D31000A7E3B /* BFCacheHandle.h */,
+				54BD826822545D31000A7E3B /* BFCacheHandle.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54BD8219225452CD000A7E3B /* libWeexAppNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BD8223225452CD000A7E3B /* Build configuration list for PBXNativeTarget "libWeexAppNative" */;
+			buildPhases = (
+				54BD8216225452CD000A7E3B /* Sources */,
+				54BD8217225452CD000A7E3B /* Frameworks */,
+				54BD8218225452CD000A7E3B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libWeexAppNative;
+			productName = libWeexAppNative;
+			productReference = 54BD821A225452CD000A7E3B /* liblibWeexAppNative.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54BD8212225452CD000A7E3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BF;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "毕方";
+				TargetAttributes = {
+					54BD8219225452CD000A7E3B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 54BD8215225452CD000A7E3B /* Build configuration list for PBXProject "libWeexAppNative" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54BD8211225452CD000A7E3B;
+			productRefGroup = 54BD821B225452CD000A7E3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54BD8219225452CD000A7E3B /* libWeexAppNative */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54BD8216225452CD000A7E3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BD825B2254552F000A7E3B /* UIAlertView+WX.m in Sources */,
+				54BD8246225453AC000A7E3B /* BFAppNativeProxy.mm in Sources */,
+				54BD826922545D31000A7E3B /* BFCacheHandle.m in Sources */,
+				54BD828B22548F38000A7E3B /* BFWeiXinShareHandle.m in Sources */,
+				54BD8249225453C5000A7E3B /* BFAppNativeModule.m in Sources */,
+				54BD825E2254552F000A7E3B /* WXMediaMessage+messageConstruct.m in Sources */,
+				54BD827022547C64000A7E3B /* BFQQShareHandle.m in Sources */,
+				545EE9792254C113005E5BE1 /* BFLocationVC.m in Sources */,
+				54BD825D2254552F000A7E3B /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
+				54C53823225C47010038EABD /* BFNearbyVC.m in Sources */,
+				54BD825C2254552F000A7E3B /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		54BD8221225452CD000A7E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		54BD8222225452CD000A7E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54BD8224225452CD000A7E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = LK2KT7Q34K;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libWeexAppNative/QQSDK",
+					"\"$(SRCROOT)/../../SDK/Libs/",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../SDK/inc\"",
+					"\"$(SRCROOT)/../../SDK/inc/weexHeader\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeChatSDK",
+					"$(PROJECT_DIR)/libWeexAppNative/WeChatSDK",
+					"$(PROJECT_DIR)/libWeexAppNative/QQSDK/qqShare",
+					"$(PROJECT_DIR)/libWeexAppNative/AMapSDK",
+					"$(PROJECT_DIR)/AMapSDK/foundation",
+					"$(PROJECT_DIR)/AMapSDK/search",
+					"$(PROJECT_DIR)/AMapSDK/2d",
+					"$(PROJECT_DIR)/AMapSDK/loc",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 arm64e armv7s arm64";
+			};
+			name = Debug;
+		};
+		54BD8225225452CD000A7E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = LK2KT7Q34K;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libWeexAppNative/QQSDK",
+					"\"$(SRCROOT)/../../SDK/Libs/",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../SDK/inc\"",
+					"\"$(SRCROOT)/../../SDK/inc/weexHeader\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WeChatSDK",
+					"$(PROJECT_DIR)/libWeexAppNative/WeChatSDK",
+					"$(PROJECT_DIR)/libWeexAppNative/QQSDK/qqShare",
+					"$(PROJECT_DIR)/libWeexAppNative/AMapSDK",
+					"$(PROJECT_DIR)/AMapSDK/foundation",
+					"$(PROJECT_DIR)/AMapSDK/search",
+					"$(PROJECT_DIR)/AMapSDK/2d",
+					"$(PROJECT_DIR)/AMapSDK/loc",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 arm64e armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54BD8215225452CD000A7E3B /* Build configuration list for PBXProject "libWeexAppNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BD8221225452CD000A7E3B /* Debug */,
+				54BD8222225452CD000A7E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54BD8223225452CD000A7E3B /* Build configuration list for PBXNativeTarget "libWeexAppNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BD8224225452CD000A7E3B /* Debug */,
+				54BD8225225452CD000A7E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54BD8212225452CD000A7E3B /* Project object */;
+}

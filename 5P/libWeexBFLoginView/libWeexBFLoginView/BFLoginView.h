@@ -10,13 +10,16 @@
 
 typedef void(^BFLoginViewCallback)(NSDictionary *result);
 
+typedef void(^BtnBlock)(NSDictionary *result);
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BFLoginView : UIView
 
+@property (nonatomic, copy)  BtnBlock btnBlock;
 + (BFLoginView *)loginWithOptions:(NSDictionary *)options callback:(BFLoginViewCallback)callback;
 
-- (void)show;
+- (void)showWithView:(UIView *)view;
 - (void)dismiss;
 @end
 

@@ -7,29 +7,29 @@
 //
 
 #import "BFLoginViewModule.h"
-#import "BFLoginView.h"
+
 #import "WXUtility.h"
+#import "BFLoginVC.h"
+
+//#import "WXApiObject.h"
+//#import "WXApi.h"
+//#import "SendMessageToWXReq+requestWithTextOrMediaMessage.h"
+//#import "WXMediaMessage+messageConstruct.h"
+
 
 @interface BFLoginViewModule()
-@property (nonatomic ,strong) BFLoginView *loginView;
-@end
 
+@end
 
 @implementation BFLoginViewModule
 @synthesize weexInstance;
-WX_EXPORT_METHOD(@selector(login:callback:))
-WX_EXPORT_METHOD(@selector(login:call:))
-WX_EXPORT_METHOD(@selector(dismiss))
-- (void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
 
+WX_EXPORT_METHOD(@selector(login:callback:))
+//WX_EXPORT_METHOD(@selector(dismiss))
 - (instancetype)init
 {
     if (self = [super init]) {
-        /* 监听App停止运行事件，如果alert存在，调一下dismiss方法移除 */
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dismiss) name:@"PDRCoreAppDidStopedKey" object:nil];
+       
     }
     return self;
 }
@@ -37,15 +37,15 @@ WX_EXPORT_METHOD(@selector(dismiss))
 
 - (void)_login:(NSDictionary *)options callback:(WXModuleKeepAliveCallback)callback
 {
-    BFLoginView *loginView = [BFLoginView
-                              loginWithOptions:options
-                              callback:^(NSDictionary *result) {
-                                                              if (callback) {
-                                                                  callback(result,YES);
-                                                              }
-                                                          }];
-    self.loginView = loginView;
-    [loginView show];
+    UIViewController *topRootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    while (topRootViewController.presentedViewController)
+    {
+        topRootViewController = topRootViewController.presentedViewController;
+    }
+    
+    BFLoginVC *loginVC = [[BFLoginVC alloc] initWithOptions:options callback:callback];
+    UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    [topRootViewController presentViewController:navc animated:YES completion:nil];
 }
 
 
@@ -55,14 +55,38 @@ WX_EXPORT_METHOD(@selector(dismiss))
     [self _login:options callback:callback];
 }
 
-- (void)login:(NSDictionary *)options call:(WXModuleKeepAliveCallback)callback
-{
-    [self _login:options callback:callback];
-}
 
-- (void)dismiss
-{
-    [self.loginView dismiss];
-}
+
+//- (void)sendFileContent {
+//    NSString *kFileName = @"";
+//    NSString *kFileExtension = @"";
+//    UIImage *thumbImage = [UIImage imageNamed:@"res2.jpg"];
+//    NSString* filePath = [[NSBundle mainBundle] pathForResource:kFileName
+//                                                         ofType:kFileExtension];
+//    NSData *fileData = [NSData dataWithContentsOfFile:filePath];
+//
+//    WXMediaMessage *message = [WXMediaMessage message];
+//    message.title = kFileName;
+//    message.description = kFileName;
+//    [message setThumbImage:thumbImage];
+//
+//    WXFileObject *ext = [WXFileObject object];
+//    ext.fileExtension = @"pdf";
+//    ext.fileData = fileData;
+//
+//    message.mediaObject = ext;
+//
+//
+//
+//    SendMessageToWXReq* req = [SendMessageToWXReq requestWithText:nil
+//                                                   OrMediaMessage:message
+//                                                            bText:NO
+//                                                          InScene:_currentScene];
+//    BOOL rep =  [WXApi sendReq:req];
+//
+//
+//}
+
+
 
 @end

@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		546430D222532C6500998F26 /* BFShareFileProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 546430D122532C6500998F26 /* BFShareFileProxy.m */; };
+		546430D522532C7700998F26 /* BFShareFileModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 546430D422532C7700998F26 /* BFShareFileModule.m */; };
+		546430D822532CE200998F26 /* BFShareFileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 546430D722532CE200998F26 /* BFShareFileVC.m */; };
+		5464310A22533ADE00998F26 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 546430FF22533ADE00998F26 /* libWeChatSDK.a */; };
+		5464310B22533ADE00998F26 /* UIAlertView+WX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5464310122533ADE00998F26 /* UIAlertView+WX.m */; };
+		5464310C22533ADE00998F26 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5464310222533ADE00998F26 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */; };
+		5464310D22533ADE00998F26 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5464310522533ADE00998F26 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */; };
+		5464310E22533ADE00998F26 /* WXMediaMessage+messageConstruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 5464310622533ADE00998F26 /* WXMediaMessage+messageConstruct.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54643097225329B100998F26 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		54643099225329B100998F26 /* liblibWeexBFShareFile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibWeexBFShareFile.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		546430D022532C6500998F26 /* BFShareFileProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFShareFileProxy.h; sourceTree = "<group>"; };
+		546430D122532C6500998F26 /* BFShareFileProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFShareFileProxy.m; sourceTree = "<group>"; };
+		546430D322532C7700998F26 /* BFShareFileModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFShareFileModule.h; sourceTree = "<group>"; };
+		546430D422532C7700998F26 /* BFShareFileModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFShareFileModule.m; sourceTree = "<group>"; };
+		546430D622532CE200998F26 /* BFShareFileVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFShareFileVC.h; sourceTree = "<group>"; };
+		546430D722532CE200998F26 /* BFShareFileVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFShareFileVC.m; sourceTree = "<group>"; };
+		546430FB22533ADE00998F26 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		546430FC22533ADE00998F26 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		546430FD22533ADE00998F26 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		546430FE22533ADE00998F26 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		546430FF22533ADE00998F26 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		5464310122533ADE00998F26 /* UIAlertView+WX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+WX.m"; sourceTree = "<group>"; };
+		5464310222533ADE00998F26 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		5464310322533ADE00998F26 /* WXMediaMessage+messageConstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WXMediaMessage+messageConstruct.h"; sourceTree = "<group>"; };
+		5464310422533ADE00998F26 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		5464310522533ADE00998F26 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.m"; sourceTree = "<group>"; };
+		5464310622533ADE00998F26 /* WXMediaMessage+messageConstruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WXMediaMessage+messageConstruct.m"; sourceTree = "<group>"; };
+		5464310722533ADE00998F26 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GetMessageFromWXResp+responseWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+		5464310822533ADE00998F26 /* UIAlertView+WX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+WX.h"; sourceTree = "<group>"; };
+		5464310922533ADE00998F26 /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SendMessageToWXReq+requestWithTextOrMediaMessage.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54643096225329B100998F26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5464310A22533ADE00998F26 /* libWeChatSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54643090225329B100998F26 = {
+			isa = PBXGroup;
+			children = (
+				5464309B225329B100998F26 /* libWeexBFShareFile */,
+				5464309A225329B100998F26 /* Products */,
+				546430D922532EBA00998F26 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5464309A225329B100998F26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54643099225329B100998F26 /* liblibWeexBFShareFile.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5464309B225329B100998F26 /* libWeexBFShareFile */ = {
+			isa = PBXGroup;
+			children = (
+				546430FA22533ADE00998F26 /* WeChatSDK184 */,
+				546430D022532C6500998F26 /* BFShareFileProxy.h */,
+				546430D122532C6500998F26 /* BFShareFileProxy.m */,
+				546430D322532C7700998F26 /* BFShareFileModule.h */,
+				546430D422532C7700998F26 /* BFShareFileModule.m */,
+				546430D622532CE200998F26 /* BFShareFileVC.h */,
+				546430D722532CE200998F26 /* BFShareFileVC.m */,
+			);
+			path = libWeexBFShareFile;
+			sourceTree = "<group>";
+		};
+		546430D922532EBA00998F26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		546430FA22533ADE00998F26 /* WeChatSDK184 */ = {
+			isa = PBXGroup;
+			children = (
+				546430FB22533ADE00998F26 /* WXApi.h */,
+				546430FC22533ADE00998F26 /* WXApiObject.h */,
+				546430FD22533ADE00998F26 /* README.txt */,
+				546430FE22533ADE00998F26 /* WechatAuthSDK.h */,
+				546430FF22533ADE00998F26 /* libWeChatSDK.a */,
+				5464310022533ADE00998F26 /* Helper */,
+			);
+			path = WeChatSDK184;
+			sourceTree = "<group>";
+		};
+		5464310022533ADE00998F26 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5464310122533ADE00998F26 /* UIAlertView+WX.m */,
+				5464310222533ADE00998F26 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m */,
+				5464310322533ADE00998F26 /* WXMediaMessage+messageConstruct.h */,
+				5464310422533ADE00998F26 /* Constant.h */,
+				5464310522533ADE00998F26 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m */,
+				5464310622533ADE00998F26 /* WXMediaMessage+messageConstruct.m */,
+				5464310722533ADE00998F26 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.h */,
+				5464310822533ADE00998F26 /* UIAlertView+WX.h */,
+				5464310922533ADE00998F26 /* SendMessageToWXReq+requestWithTextOrMediaMessage.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54643098225329B100998F26 /* libWeexBFShareFile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 546430A2225329B100998F26 /* Build configuration list for PBXNativeTarget "libWeexBFShareFile" */;
+			buildPhases = (
+				54643095225329B100998F26 /* Sources */,
+				54643096225329B100998F26 /* Frameworks */,
+				54643097225329B100998F26 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libWeexBFShareFile;
+			productName = libWeexBFShareFile;
+			productReference = 54643099225329B100998F26 /* liblibWeexBFShareFile.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54643091225329B100998F26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "毕方";
+				TargetAttributes = {
+					54643098225329B100998F26 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 54643094225329B100998F26 /* Build configuration list for PBXProject "libWeexBFShareFile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54643090225329B100998F26;
+			productRefGroup = 5464309A225329B100998F26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54643098225329B100998F26 /* libWeexBFShareFile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54643095225329B100998F26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				546430D522532C7700998F26 /* BFShareFileModule.m in Sources */,
+				546430D222532C6500998F26 /* BFShareFileProxy.m in Sources */,
+				5464310B22533ADE00998F26 /* UIAlertView+WX.m in Sources */,
+				5464310D22533ADE00998F26 /* SendMessageToWXReq+requestWithTextOrMediaMessage.m in Sources */,
+				546430D822532CE200998F26 /* BFShareFileVC.m in Sources */,
+				5464310E22533ADE00998F26 /* WXMediaMessage+messageConstruct.m in Sources */,
+				5464310C22533ADE00998F26 /* GetMessageFromWXResp+responseWithTextOrMediaMessage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		546430A0225329B100998F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		546430A1225329B100998F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		546430A3225329B100998F26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LK2KT7Q34K;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../SDK/inc\"",
+					"\"$(SRCROOT)/../../SDK/inc/weexHeader\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libWeexBFShareFile/WeChatSDK184",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		546430A4225329B100998F26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LK2KT7Q34K;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../SDK/inc\"",
+					"\"$(SRCROOT)/../../SDK/inc/weexHeader\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libWeexBFShareFile/WeChatSDK184",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54643094225329B100998F26 /* Build configuration list for PBXProject "libWeexBFShareFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				546430A0225329B100998F26 /* Debug */,
+				546430A1225329B100998F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		546430A2225329B100998F26 /* Build configuration list for PBXNativeTarget "libWeexBFShareFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				546430A3225329B100998F26 /* Debug */,
+				546430A4225329B100998F26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54643091225329B100998F26 /* Project object */;
+}
