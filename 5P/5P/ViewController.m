@@ -18,7 +18,7 @@
 {
     PDRCoreApp* pAppHandle;
     BOOL _isFullScreen;
-    UIStatusBarStyle _statusBarStyle;
+//    UIStatusBarStyle _statusBarStyle;
 }
 @end
 static UIView* pContentVIew = nil;
@@ -33,15 +33,15 @@ static UIView* pContentVIew = nil;
     
     PDRCore *h5Engine = [PDRCore Instance];
     [self setStatusBarStyle:h5Engine.settings.statusBarStyle];
-    _isFullScreen = [UIApplication sharedApplication].statusBarHidden;
+//    _isFullScreen = [UIApplication sharedApplication].statusBarHidden;
     
 //    if ( _isFullScreen != h5Engine.settings.fullScreen ) {
-        _isFullScreen = h5Engine.settings.fullScreen;
-        if ( [self  respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)] ) {
-            [self setNeedsStatusBarAppearanceUpdate];
-        } else {
-            [[UIApplication sharedApplication] setStatusBarHidden:_isFullScreen];
-        }
+//        _isFullScreen = h5Engine.settings.fullScreen;
+//        if ( [self  respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)] ) {
+//            [self setNeedsStatusBarAppearanceUpdate];
+//        } else {
+//            [[UIApplication sharedApplication] setStatusBarHidden:_isFullScreen];
+//        }
 //    }
     h5Engine.coreDeleagete = self;
     h5Engine.persentViewController = self;
@@ -62,14 +62,6 @@ static UIView* pContentVIew = nil;
     NSString* pArgus = @"";
     // 启动该应用
     pAppHandle = [[[PDRCore Instance] appManager] openAppAtLocation:pWWWPath withIndexPath:@"index.html" withArgs:pArgus withDelegate:nil];
-
-
-
-    
-    
-    
-    
-    
 }
 
 - (void)test {
@@ -88,11 +80,13 @@ static UIView* pContentVIew = nil;
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 }
+
 
 
 //#pragma mark -
@@ -136,36 +130,38 @@ static UIView* pContentVIew = nil;
 //                          return NO;*/
 //}
 
-- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation {
-    return UIStatusBarAnimationFade;
-}
 
--(BOOL)getStatusBarHidden {
-    if ( [PTDeviceOSInfo systemVersion] > PTSystemVersion6Series ) {
-        return _isFullScreen;
-    }
-    return [UIApplication sharedApplication].statusBarHidden;
-}
+//-(BOOL)getStatusBarHidden {
+//    if ( [PTDeviceOSInfo systemVersion] > PTSystemVersion6Series ) {
+//        return _isFullScreen;
+//    }
+//    return [UIApplication sharedApplication].statusBarHidden;
+//}
 
-#pragma mark - StatusBarStyle
--(UIStatusBarStyle)getStatusBarStyle {
-    return [self preferredStatusBarStyle];
-}
--(void)setStatusBarStyle:(UIStatusBarStyle)statusBarStyle {
-    if ( _statusBarStyle != statusBarStyle ) {
-        _statusBarStyle = statusBarStyle;
-        if ( [self  respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)] ) {
-            [self setNeedsStatusBarAppearanceUpdate];
-        } else {
-            [[UIApplication sharedApplication] setStatusBarStyle:_statusBarStyle];
-        }
-    }
-}
+//- (UIStatusBarAnimation)preferredStatusBarUpdateAnimation {
+//    return UIStatusBarAnimationFade;
+//}
 
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return _statusBarStyle;
-}
+
+//#pragma mark - StatusBarStyle
+//-(UIStatusBarStyle)getStatusBarStyle {
+//    return [self preferredStatusBarStyle];
+//}
+//-(void)setStatusBarStyle:(UIStatusBarStyle)statusBarStyle {
+//    if ( _statusBarStyle != statusBarStyle ) {
+//        _statusBarStyle = statusBarStyle;
+//        if ( [self  respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)] ) {
+//            [self setNeedsStatusBarAppearanceUpdate];
+//        } else {
+//            [[UIApplication sharedApplication] setStatusBarStyle:_statusBarStyle];
+//        }
+//    }
+//}
+//
+//- (UIStatusBarStyle)preferredStatusBarStyle
+//{
+//    return _statusBarStyle;
+//}
 
 #pragma mark -
 -(void)wantsFullScreen:(BOOL)fullScreen

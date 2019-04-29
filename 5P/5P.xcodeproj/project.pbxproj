@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54211044226026AA001A9B3A /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54211043226026A9001A9B3A /* Photos.framework */; };
+		54211046226026C4001A9B3A /* liblibCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54211045226026C4001A9B3A /* liblibCamera.a */; };
+		5421104822602B0E001A9B3A /* liblibZip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5421104722602B0D001A9B3A /* liblibZip.a */; };
 		545EE9A22254CC2F005E5BE1 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545EE9A12254CC2F005E5BE1 /* ExternalAccessory.framework */; };
 		545EE9A42254CD53005E5BE1 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545EE9A32254CD52005E5BE1 /* GLKit.framework */; };
 		545EE9DB2254CFD4005E5BE1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545EE9DA2254CFD4005E5BE1 /* OpenGLES.framework */; };
@@ -18,7 +21,10 @@
 		5464311022533F3C00998F26 /* UPLiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5464310F22533F3C00998F26 /* UPLiveSDK.framework */; };
 		5464311622534A1000998F26 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5464311522534A1000998F26 /* Security.framework */; };
 		5464312022534AFD00998F26 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5464311F22534AFD00998F26 /* libsqlite3.tbd */; };
+		5484954A226461EF00B3A90F /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 54849549226461EF00B3A90F /* libiconv.2.4.0.tbd */; };
+		54BCD99422705E0B00619D1F /* resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54BCD99322705DF600619D1F /* resource.bundle */; };
 		54BD82612254555E000A7E3B /* liblibWeexAppNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BD822B225452E2000A7E3B /* liblibWeexAppNative.a */; };
+		54BDFD1B227039C800C2F09D /* PandoraApi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54BDFD1A227039C800C2F09D /* PandoraApi.bundle */; };
 		54E6DA802239169C00AE31EF /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DA7F2239169C00AE31EF /* AppDelegate.mm */; };
 		54E6DA832239169C00AE31EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E6DA822239169C00AE31EF /* ViewController.m */; };
 		54E6DA862239169C00AE31EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DA842239169C00AE31EF /* Main.storyboard */; };
@@ -40,7 +46,6 @@
 		54E6DB9A22391EE200AE31EF /* bds_easr_wakeup_words.dat in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8422391EE200AE31EF /* bds_easr_wakeup_words.dat */; };
 		54E6DB9B22391EE200AE31EF /* bds_easr_dnn_wakeup_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8522391EE200AE31EF /* bds_easr_dnn_wakeup_model.dat */; };
 		54E6DB9C22391EE200AE31EF /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8622391EE200AE31EF /* TZImagePickerController.bundle */; };
-		54E6DB9D22391EE200AE31EF /* PandoraApi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8722391EE200AE31EF /* PandoraApi.bundle */; };
 		54E6DB9E22391EE200AE31EF /* BaiduWalletSDKBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8822391EE200AE31EF /* BaiduWalletSDKBundle.bundle */; };
 		54E6DBA022391EE200AE31EF /* qucsdkResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8A22391EE200AE31EF /* qucsdkResources.bundle */; };
 		54E6DBA122391EE200AE31EF /* DCMediaVideo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54E6DB8B22391EE200AE31EF /* DCMediaVideo.bundle */; };
@@ -143,6 +148,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54211043226026A9001A9B3A /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		54211045226026C4001A9B3A /* liblibCamera.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibCamera.a; path = ../SDK/Libs/liblibCamera.a; sourceTree = "<group>"; };
+		5421104722602B0D001A9B3A /* liblibZip.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblibZip.a; path = ../SDK/Libs/liblibZip.a; sourceTree = "<group>"; };
 		545EE9A12254CC2F005E5BE1 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		545EE9A32254CD52005E5BE1 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		545EE9DA2254CFD4005E5BE1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -153,7 +161,10 @@
 		5464310F22533F3C00998F26 /* UPLiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UPLiveSDK.framework; path = ../SDK/Libs/UPLiveSDK.framework; sourceTree = "<group>"; };
 		5464311522534A1000998F26 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5464311F22534AFD00998F26 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		54849549226461EF00B3A90F /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		54BCD99322705DF600619D1F /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resource.bundle; sourceTree = "<group>"; };
 		54BD8226225452E1000A7E3B /* libWeexAppNative.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libWeexAppNative.xcodeproj; path = libWeexAppNative/libWeexAppNative.xcodeproj; sourceTree = "<group>"; };
+		54BDFD1A227039C800C2F09D /* PandoraApi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = PandoraApi.bundle; path = ../../SDK/Bundles/PandoraApi.bundle; sourceTree = "<group>"; };
 		54E6DA7B2239169C00AE31EF /* 5P.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5P.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E6DA7E2239169C00AE31EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54E6DA7F2239169C00AE31EF /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -179,7 +190,6 @@
 		54E6DB8422391EE200AE31EF /* bds_easr_wakeup_words.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_wakeup_words.dat; sourceTree = "<group>"; };
 		54E6DB8522391EE200AE31EF /* bds_easr_dnn_wakeup_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_dnn_wakeup_model.dat; sourceTree = "<group>"; };
 		54E6DB8622391EE200AE31EF /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
-		54E6DB8722391EE200AE31EF /* PandoraApi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PandoraApi.bundle; sourceTree = "<group>"; };
 		54E6DB8822391EE200AE31EF /* BaiduWalletSDKBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BaiduWalletSDKBundle.bundle; sourceTree = "<group>"; };
 		54E6DB8922391EE200AE31EF /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
 		54E6DB8A22391EE200AE31EF /* qucsdkResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = qucsdkResources.bundle; sourceTree = "<group>"; };
@@ -246,6 +256,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E6DDFD223B3CE200AE31EF /* libcoreSupport.a in Frameworks */,
+				5484954A226461EF00B3A90F /* libiconv.2.4.0.tbd in Frameworks */,
+				546430F9225336C200998F26 /* VideoToolbox.framework in Frameworks */,
+				54E6DE1D223B3D8A00AE31EF /* AVFoundation.framework in Frameworks */,
+				546430F7225336B400998F26 /* Accelerate.framework in Frameworks */,
+				546430F3225336A600998F26 /* libz.1.2.5.tbd in Frameworks */,
+				546430F5225336AE00998F26 /* libbz2.1.0.tbd in Frameworks */,
+				5464311022533F3C00998F26 /* UPLiveSDK.framework in Frameworks */,
+				5421104822602B0E001A9B3A /* liblibZip.a in Frameworks */,
+				54211046226026C4001A9B3A /* liblibCamera.a in Frameworks */,
+				54E6DE2B223B3DBF00AE31EF /* CoreMedia.framework in Frameworks */,
+				54211044226026AA001A9B3A /* Photos.framework in Frameworks */,
+				54E6DE1B223B3D8500AE31EF /* AssetsLibrary.framework in Frameworks */,
 				545EE9DB2254CFD4005E5BE1 /* OpenGLES.framework in Frameworks */,
 				54E6DE47223B3F1400AE31EF /* CoreGraphics.framework in Frameworks */,
 				545EE9A42254CD53005E5BE1 /* GLKit.framework in Frameworks */,
@@ -260,11 +283,6 @@
 				54E6DE17223B3D7800AE31EF /* CoreLocation.framework in Frameworks */,
 				54E6DE3D223B3E0500AE31EF /* libsqlite3.0.tbd in Frameworks */,
 				54E6DE35223B3DDC00AE31EF /* libc++.tbd in Frameworks */,
-				546430F9225336C200998F26 /* VideoToolbox.framework in Frameworks */,
-				54E6DE1D223B3D8A00AE31EF /* AVFoundation.framework in Frameworks */,
-				546430F7225336B400998F26 /* Accelerate.framework in Frameworks */,
-				546430F5225336AE00998F26 /* libbz2.1.0.tbd in Frameworks */,
-				546430F3225336A600998F26 /* libz.1.2.5.tbd in Frameworks */,
 				54E6DED7223B509400AE31EF /* liblibWeexDCRichAlert.a in Frameworks */,
 				54E6DDD0223A274F00AE31EF /* liblibWeexBFLoginView.a in Frameworks */,
 				54E6DE2F223B3DCB00AE31EF /* CoreFoundation.framework in Frameworks */,
@@ -281,20 +299,17 @@
 				54E6DE3F223B3E0D00AE31EF /* libxml2.tbd in Frameworks */,
 				54E6DE51223B422400AE31EF /* liblibNotification.a in Frameworks */,
 				54E6DE4B223B41F400AE31EF /* liblibWeex.a in Frameworks */,
-				54E6DE2B223B3DBF00AE31EF /* CoreMedia.framework in Frameworks */,
 				54E6DE29223B3DB900AE31EF /* CoreAudio.framework in Frameworks */,
 				54E6DE27223B3DAA00AE31EF /* CoreAudioKit.framework in Frameworks */,
 				54E6DE25223B3DA500AE31EF /* CFNetwork.framework in Frameworks */,
 				54E6DE23223B3D9C00AE31EF /* Foundation.framework in Frameworks */,
 				54E6DE21223B3D9300AE31EF /* UIKit.framework in Frameworks */,
-				54E6DE1B223B3D8500AE31EF /* AssetsLibrary.framework in Frameworks */,
 				54E6DE19223B3D7D00AE31EF /* AddressBook.framework in Frameworks */,
 				54E6DE13223B3D6800AE31EF /* QuickLook.framework in Frameworks */,
 				54E6DE11223B3D6300AE31EF /* StoreKit.framework in Frameworks */,
 				54E6DE0F223B3D5E00AE31EF /* AdSupport.framework in Frameworks */,
 				54E6DE0D223B3D5900AE31EF /* MessageUI.framework in Frameworks */,
 				54E6DE55223B443D00AE31EF /* liblibNativeObj.a in Frameworks */,
-				54E6DDFD223B3CE200AE31EF /* libcoreSupport.a in Frameworks */,
 				54E6DE05223B3D2000AE31EF /* liblibStorage.a in Frameworks */,
 				54E6DDFF223B3CF600AE31EF /* liblibIO.a in Frameworks */,
 				54E6DE03223B3D1300AE31EF /* liblibPDRCore.a in Frameworks */,
@@ -302,7 +317,6 @@
 				54E6DE01223B3D0300AE31EF /* liblibNavigator.a in Frameworks */,
 				AA4957A8E73A1FFC3C2F041B /* libPods-5P.a in Frameworks */,
 				54E6DDFB223B3CC900AE31EF /* liblibXHR.a in Frameworks */,
-				5464311022533F3C00998F26 /* UPLiveSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +385,10 @@
 		54E6DA942239173100AE31EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54849549226461EF00B3A90F /* libiconv.2.4.0.tbd */,
+				5421104722602B0D001A9B3A /* liblibZip.a */,
+				54211045226026C4001A9B3A /* liblibCamera.a */,
+				54211043226026A9001A9B3A /* Photos.framework */,
 				545EE9DA2254CFD4005E5BE1 /* OpenGLES.framework */,
 				545EE9A32254CD52005E5BE1 /* GLKit.framework */,
 				545EE9A12254CC2F005E5BE1 /* ExternalAccessory.framework */,
@@ -421,6 +439,8 @@
 		54E6DB7622391EE200AE31EF /* Bundles */ = {
 			isa = PBXGroup;
 			children = (
+				54BCD99322705DF600619D1F /* resource.bundle */,
+				54BDFD1A227039C800C2F09D /* PandoraApi.bundle */,
 				54E6DB7722391EE200AE31EF /* mapapi.bundle */,
 				54E6DB7822391EE200AE31EF /* MiPassport.bundle */,
 				54E6DB7922391EE200AE31EF /* AlipaySDK.bundle */,
@@ -429,7 +449,6 @@
 				54E6DB7C22391EE200AE31EF /* TencentOpenApi_IOS_Bundle.bundle */,
 				54E6DB7D22391EE200AE31EF /* BDSClientEASRResources */,
 				54E6DB8622391EE200AE31EF /* TZImagePickerController.bundle */,
-				54E6DB8722391EE200AE31EF /* PandoraApi.bundle */,
 				54E6DB8822391EE200AE31EF /* BaiduWalletSDKBundle.bundle */,
 				54E6DB8922391EE200AE31EF /* AMap.bundle */,
 				54E6DB8A22391EE200AE31EF /* qucsdkResources.bundle */,
@@ -595,6 +614,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BCD99422705E0B00619D1F /* resource.bundle in Resources */,
 				545EE9E32254D702005E5BE1 /* AMap.bundle in Resources */,
 				54E6DBA122391EE200AE31EF /* DCMediaVideo.bundle in Resources */,
 				54E6DB9B22391EE200AE31EF /* bds_easr_dnn_wakeup_model.dat in Resources */,
@@ -609,7 +629,6 @@
 				54E6DB9222391EE200AE31EF /* Pingpp.bundle in Resources */,
 				54E6DB8E22391EE200AE31EF /* mapapi.bundle in Resources */,
 				54E6DB9622391EE200AE31EF /* bds_easr_mfe_cmvn.dat in Resources */,
-				54E6DB9D22391EE200AE31EF /* PandoraApi.bundle in Resources */,
 				54E6DB9822391EE200AE31EF /* bds_easr_mfe_dnn.dat in Resources */,
 				54E6DBEE22392B3200AE31EF /* control.xml in Resources */,
 				54E6DB9122391EE200AE31EF /* WeiboSDK.bundle in Resources */,
@@ -620,6 +639,7 @@
 				54E6DA862239169C00AE31EF /* Main.storyboard in Resources */,
 				54E6DBA222391EE200AE31EF /* SVProgressHUD.bundle in Resources */,
 				54E6DB9A22391EE200AE31EF /* bds_easr_wakeup_words.dat in Resources */,
+				54BDFD1B227039C800C2F09D /* PandoraApi.bundle in Resources */,
 				54E6DB9522391EE200AE31EF /* bds_easr_basic_model.dat in Resources */,
 				54E6DBA322391EE200AE31EF /* weex-main-jsfm.js in Resources */,
 				54E6DB9422391EE200AE31EF /* bds_license.dat in Resources */,
@@ -855,8 +875,10 @@
 					"-llibPDRCore",
 					"-llibUI",
 					"-llibVideo",
+					"-llibCamera",
+					"-llibZip",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bifang.uni.t;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bifang.uni;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s zrm64e arm64";
@@ -896,8 +918,10 @@
 					"-llibPDRCore",
 					"-llibUI",
 					"-llibVideo",
+					"-llibCamera",
+					"-llibZip",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bifang.uni.t;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bifang.uni;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s zrm64e arm64";

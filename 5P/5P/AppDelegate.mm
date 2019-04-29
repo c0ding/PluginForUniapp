@@ -23,6 +23,11 @@
     self.window.rootViewController = [[ViewController alloc] init];
     [self.window makeKeyAndVisible];
     [self UniCoreEventWithApplication:application withMethod:@"application:didFinishLaunchingWithOptions:" :launchOptions :nil];
+    
+//    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+
+    
     return  [PDRCore initEngineWihtOptions:launchOptions withRunMode:PDRCoreRunModeAppClient];;
 }
 
