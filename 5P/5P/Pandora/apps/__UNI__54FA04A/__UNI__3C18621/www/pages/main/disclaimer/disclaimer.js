@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"disclaimer.",[1],"data-v-22647c13 { padding: ",[0,32],"; }\n",],undefined,{path:"./pages/main/disclaimer/disclaimer.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/main/disclaimer/disclaimer.wxml') } }));

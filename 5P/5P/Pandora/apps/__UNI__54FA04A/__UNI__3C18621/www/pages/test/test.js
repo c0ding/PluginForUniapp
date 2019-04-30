@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"xxxxx { font-size: ",[0,72],"; }\n.",[1],"xxxxx { height: ",[0,22],"; width: ",[0,22],"; }\n",],undefined,{path:"./pages/test/test.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/test/test.wxml') } }));
