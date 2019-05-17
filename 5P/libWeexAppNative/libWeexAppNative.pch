@@ -1,0 +1,53 @@
+//
+//  libWeexAppNative.pch
+//  libWeexAppNative
+//
+//  Created by 张逸阳 on 2019/4/9.
+//  Copyright © 2019年 毕方. All rights reserved.
+//
+
+#ifndef libWeexAppNative_pch
+#define libWeexAppNative_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "JXCategoryView.h"
+#import "AMapCommonObj.h"
+#import "UINavigationBar+handle.h"
+
+#define iPhone10 ([UIScreen mainScreen].bounds.size.height == 812)
+#define iPhone4 ([UIScreen mainScreen].bounds.size.height == 480)
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size)) : NO)
+#define iPhone6plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
+
+
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+
+
+#define kWidth(R) (R)*(kScreenWidth)/375
+#define kHeight(R) (iPhone10?((R)*(kScreenHeight)/667):iPhone4?((R)*(kScreenHeight)/568):((R)*(kScreenHeight)/667))
+#define font(R) (R)*(kScreenWidth)/375
+
+#define RGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+#define kCachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+
+#define kDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+
+
+#define kLibraryPath [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject]
+
+
+#define kPoisPlistPath [kDocumentPath stringByAppendingPathComponent:@"pois.plist"]
+
+#define kCurrentAddressPlistPath [kDocumentPath stringByAppendingPathComponent:@"currentAddress.plist"]
+
+
+#define WeakSelf(type) autoreleasepool{} __weak __typeof__(type) weakSelf = type;
+
+#define StrongSelf(type) autoreleasepool{} __strong __typeof__(type) strongSelf = type;
+
+
+#endif /* libWeexAppNative_pch */

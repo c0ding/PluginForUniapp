@@ -9,11 +9,11 @@
 #import "BFAppNativeProxy.h"
 
 #import "TencentOAuth.h"
-
+#import "WXApi.h"
 #import "AMapFoundationKit.h"
 #import "AMapLocationKit.h"
-const static NSString *AMapKey = @"0b6dc5e1ab190a976cf234ba2cef5f9d";
-
+const static NSString *AMapKey = @"c18ef6f066ac524a3181f0eafc493c93";
+const static NSString *WeiXinAppID = @"wx3c5ad4a102d0022a";
 @implementation BFAppNativeProxy
 
 
@@ -24,20 +24,30 @@ const static NSString *AMapKey = @"0b6dc5e1ab190a976cf234ba2cef5f9d";
 
     [AMapServices sharedServices].apiKey = (NSString *)AMapKey;
     [AMapServices sharedServices].enableHTTPS = YES;
+    
+    [WXApi registerApp:(NSString *)WeiXinAppID];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSLog(@"3333 didFinishLaunching");
 
-     [[TencentOAuth alloc] initWithAppId:@"QQKey" andDelegate:nil];
+     [[TencentOAuth alloc] initWithAppId:@"1108816762" andDelegate:nil];
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
-    return [TencentOAuth HandleOpenURL:url];
+    
+    [TencentOAuth HandleOpenURL:url];
+    return [WXApi handleOpenURL:url delegate:nil];
+//    return [TencentOAuth HandleOpenURL:url];
 }
 
+- (BOOL) application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    [TencentOAuth HandleOpenURL:url];
+         return [WXApi handleOpenURL:url delegate:nil];
+}
 
 @end
