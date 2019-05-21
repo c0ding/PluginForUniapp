@@ -11,7 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BFWeiXinShareHandle : NSObject
+- (BOOL)fileWithFilePath:(NSString* )filePath andFileName:(NSString *)fileName;
 
+- (BOOL)webpageWithTitle:(NSString *)title description:(NSString *)description url:(NSString *)url;
 @end
 
 NS_ASSUME_NONNULL_END
