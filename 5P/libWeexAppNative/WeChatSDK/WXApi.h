@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol WXApiLogDelegate <NSObject>
 
-- (void)onLog:(NSString*)log logLevel:(WXLogLevel)level;
+- (void)onLog:(NSString*)log logLevel:(WeiXLogLevel)level;
 
 @end
 
@@ -177,7 +177,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param level 打印log的级别
  *  @param logBlock 打印log的回调block
  */
-+ (void)startLogByLevel:(WXLogLevel)level logBlock:(WXLogBolock)logBlock;
++ (void)startLogByLevel:(WeiXLogLevel)level logBlock:(WXLogBolock)logBlock;
 
 /*! @brief WXApi的成员函数，接受微信的log信息。byDelegate 
     注意1:sdk会弱引用这个delegate，这里可加任意对象为代理，不需要与WXApiDelegate同一个对象
@@ -185,7 +185,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param level 打印log的级别
  *  @param logDelegate 打印log的回调代理，
  */
-+ (void)startLogByLevel:(WXLogLevel)level logDelegate:(id<WXApiLogDelegate>)logDelegate;
++ (void)startLogByLevel:(WeiXLogLevel)level logDelegate:(id<WXApiLogDelegate>)logDelegate;
 
 /*! @brief 停止打印log，会清理block或者delegate为空，释放block
  *  @param 
